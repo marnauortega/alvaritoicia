@@ -1,0 +1,2308 @@
+@media only screen 
+      and (max-width: 900px)
+      and (min-aspect-ratio: 17/9) { 
+
+        body {
+          margin: 0;
+          padding: 0;
+          color: #ff8c1a;
+          background-color: #331a00;
+        }
+        
+        header {
+          padding-top: 1.8vh;
+          height: 100vh;
+          background-image: url(background.jpg);
+          background-repeat: no-repeat;
+          background-size: 100%; 
+          background-attachment: fixed;
+          margin:0;
+        }
+
+        /* Texts */
+
+        h1 {
+          float: right;
+          margin: 0 1vw 0 0;
+          font: bolder 9vw futura;
+          font-stretch: ultra-condensed;
+          display: inline;
+          
+        }
+
+        .trans {
+          display: inline;
+          opacity: 0;
+        }
+
+        h2 {
+          float: right;
+          margin: 2vh 8vw 0 0;
+          font: lighter 10vw futura;
+          display: inline-block;
+        }
+
+        .mnis {
+          display: inline;
+        }
+
+        .nis {
+          display: inline;
+        }
+
+        .caixa {
+          width: 100vw;
+          position: absolute;
+          bottom: 8vh;
+          padding: 0;
+          margin: 0;
+          
+        }
+
+        h3 {
+          text-align: center;
+          font: italic normal 8vw futura;
+          margin:0;
+          padding-bottom: 4vh; 
+        }
+
+        .dades {
+          text-align: center;
+          font: italic lighter 5.3vw futura;
+          margin: 0px;
+          padding: 0px;
+        }
+
+        .foto {
+          position: absolute;
+          bottom: 1vh;
+          right: 38vw;
+          margin:0;
+          font: normal lighter 2vw futura;
+        }
+
+        .taula {
+          margin-top: 0;
+          padding: 0px;
+          height: 75vh;
+        }
+
+        #prox {
+          width: 100vw;
+          font: italic lighter 50px futura;
+          text-align: center;
+          margin-top: 0;
+          padding:3vw 0 0 0;
+        }
+
+       td {
+        border-bottom: 1px solid #ff8c1a;
+        text-align: center;
+        padding: 1vw;
+        font: normal lighter 15px futura;
+        }
+
+        table {
+          border-collapse: collapse;
+          width: 75vw;
+          margin: auto;
+          table-layout: fixed;
+          margin-top: 6vw;
+        }
+
+        .logo {
+         height: 15vh;
+         width: 25vw;
+         margin: auto;
+         margin-top: 10vh;
+         text-align: center;
+         
+        }
+
+        .you {
+          margin: 2vw;
+          display: none;
+          
+        }
+      
+        a {
+          color: #ff8c1a;
+          text-decoration: none;
+        }
+
+        /* sideshow */
+
+       * { box-sizing: border-box; }
+
+        /* Slideshow container */
+        .slideshow-container {
+          width: 100vw;
+          height: 100vh;
+          background-color: black;
+          position: relative;
+          font-size: 0px;
+          background-attachment: fixed;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none; 
+          width: 100vw;
+          overflow: hidden;
+        }
+
+        iframe {
+          border: none;
+          height: 100vh;
+          width: 100vw;
+        }
+
+        .img {
+          display: block;
+          height: 100vh;
+          width: auto;
+          margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: #ff8c1a;
+          font-weight: normal;
+          font-size: 30px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+          color: #ff8c1a;
+          font: normal lighter 15px futura;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+          
+        }
+
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+      }
+
+@media only screen 
+      and (min-width: 900px)
+      and (min-aspect-ratio: 17/9) { 
+
+        body {
+          margin: 0;
+          padding: 0;
+          color: #ff8c1a;
+          background-color: #331a00;
+        }
+        
+        header {
+          padding-top: 1.8vh;
+          height: 100vh;
+          background-image: url(background.jpg);
+          background-repeat: no-repeat;
+          background-size: 100%; 
+          background-attachment: fixed;
+          margin:0;
+        }
+
+        /* Texts */
+
+        h1 {
+          float: right;
+          margin: 0 1vw 0 0;
+          font: bolder 9vw futura;
+          font-stretch: ultra-condensed;
+          display: inline;
+        }
+
+        .trans {
+          display: inline;
+          opacity: 0;
+        }
+
+        h2 {
+          float: right;
+          margin: 2vh 8vw 0 0;
+          font: lighter 10vw futura;
+          display: inline-block;
+        }
+
+        .mnis {
+          display: inline;
+        }
+
+        .nis {
+          display: inline;
+        }
+
+        .caixa {
+          width: 100vw;
+          position: absolute;
+          bottom: 8vh;
+          padding: 0;
+          margin: 0;
+          
+        }
+
+        h3 {
+          text-align: center;
+          font: italic normal 8vw futura;
+          margin:0;
+          padding-bottom: 4vh; 
+        }
+
+        .dades {
+          text-align: center;
+          font: italic lighter 5.3vw futura;
+          margin: 0px;
+          padding: 0px;
+        }
+
+        .foto {
+          position: absolute;
+          bottom: 1vh;
+          right: 43vw;
+          margin:0;
+          font: normal lighter 1vw futura;
+        }
+
+        .taula {
+          margin-top: 0;
+          padding: 0px;
+          height: 75vh;
+        }
+
+        #prox {
+          width: 100vw;
+          font: italic lighter 70px futura;
+          text-align: center;
+          margin-top: 0;
+          padding:6vw 0 0 0;
+        }
+
+       td {
+        border-bottom: 1px solid #ff8c1a;
+        text-align: center;
+        padding: 1vw;
+        font: normal lighter 20px futura;
+        }
+
+        table {
+          border-collapse: collapse;
+          width: 75vw;
+          margin: auto;
+          table-layout: fixed;
+          margin-top: 6vw;
+        }
+
+        .logo {
+         height: 15vh;
+         width: 25vw;
+         margin: auto;
+         margin-top: 10vh;
+         text-align: center;
+         
+        }
+
+        .you {
+          margin: 2vw;
+          display: none;
+          
+        }
+      
+        a {
+          color: #ff8c1a;
+          text-decoration: none;
+        }
+
+        /* sideshow */
+
+       * { box-sizing: border-box; }
+
+        /* Slideshow container */
+        .slideshow-container {
+          width: 100vw;
+          height: 100vh;
+          background-color: black;
+          position: relative;
+          font-size: 0px;
+          background-attachment: fixed;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none; 
+          width: 100vw;
+          overflow: hidden;
+        }
+
+        iframe {
+          border: none;
+          height: 100vh;
+          width: 100vw;
+        }
+
+        .img {
+          display: block;
+          height: 100vh;
+          width: auto;
+          margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: #ff8c1a;
+          font-weight: normal;
+          font-size: 30px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+          color: #ff8c1a;
+          font: normal lighter 20px futura;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+          
+        }
+
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+      }
+
+@media only screen 
+      
+      and (max-aspect-ratio: 17/9) { 
+
+        body {
+          margin: 0;
+          padding: 0;
+          color: #ff8c1a;
+          background-color: #331a00;
+        }
+        
+        header {
+          padding-top: 1.8vh;
+          height: 100vh;
+          background-image: url(background2.jpg);
+          background-repeat: no-repeat;
+          background-size: 100%; 
+          background-attachment: fixed;
+          margin:0;
+        }
+
+        /* Texts */
+
+        h1 {
+          
+          font: bolder 14vw futura;
+          font-stretch: ultra-condensed;
+          position: absolute;
+          bottom: 25vh;
+          right: 10.2vw;
+          padding: 0;
+        }
+
+        .trans {
+          display: inline;
+          opacity: 0;
+        }
+
+        h2 {
+          margin-left: 40.8vw;
+          margin-top: 2.5vh;
+          
+          font: lighter 13.2vw futura;
+          display: inline-block;
+        }
+
+        .mnis {
+          display: inline;
+          
+        }
+
+        .nis {
+          display: inline;
+        }
+
+        .caixa {
+          width: 100vw;
+          position: absolute;
+          bottom: 4vh;
+          padding: 0;
+          margin: 0;
+        }
+
+        h3 {
+          text-align: center;
+          font: italic normal 8vw futura;
+          margin:0;
+          margin-top: 5vh; 
+          
+        }
+
+        .dades {
+          text-align: center;
+          font: italic lighter 5.3vw futura;
+          margin: 0px;
+          padding: 0px;
+        }
+
+        .foto {
+          position: absolute;
+          bottom: 1vh;
+          right: 43vw;
+          margin:0;
+          font: normal lighter 1.5vw futura;
+        }
+
+        .taula {
+          margin:0px;
+          padding: 0px;
+          height: 73vh;
+          
+        }
+
+        #prox {
+          width: 100vw;
+          font: italic lighter 70px futura;
+          text-align: center;
+          margin-top: 2vh;
+          padding:6vw 0 0 0;
+        }
+
+       td {
+        border-bottom: 1px solid #ff8c1a;
+        text-align: center;
+        padding: 1vw;
+        font: normal lighter 25px futura;
+        }
+
+        table {
+          border-collapse: collapse;
+          width: 75vw;
+          margin: auto;
+          table-layout: fixed;
+          margin-top: 6vw;
+        }
+
+        .logo {
+         height: 15vh;
+         width: 25vw;
+         margin: auto;
+         margin-top: 10vh;
+         text-align: center;
+         
+        }
+
+        .you {
+          margin: 2vw;
+          display: none;
+          
+        }
+
+        a {
+          color: #ff8c1a;
+          text-decoration: none;
+        }
+
+        /* sideshow */
+
+       * { box-sizing: border-box; }
+
+        /* Slideshow container */
+        
+        .slideshow-container {
+          width: 100vw;
+          height: 100vh;
+          background-color: black;
+          position: relative;
+          font-size: 0px;
+          
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none; 
+          width: 100vw;
+          overflow: hidden;
+        }
+
+        iframe {
+          border: none;
+          height: 100vh;
+          width: 100vw;
+        }
+
+        .img {
+          display: block;
+          height: 100vh;
+          width: auto;
+          margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: #ff8c1a;
+          font-weight: normal;
+          font-size: 30px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+          color: #ff8c1a;
+          font: normal lighter 20px futura;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+          
+        }
+
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+      }
+
+@media only screen 
+      
+      and (max-aspect-ratio: 721/512) { 
+
+        body {
+          margin: 0;
+          padding: 0;
+          color: #ff8c1a;
+          background-color: #331a00;
+        }
+        
+        header {
+          
+          height: 100vh;
+          background-image: url(background3.jpg);
+          background-repeat: no-repeat;
+          background-size: 100%; 
+          background-attachment: fixed;
+          margin:0;
+        }
+
+        /* Texts */
+
+        h1 {
+          
+          font: bolder 14vw futura;
+          font-stretch: ultra-condensed;
+          position: absolute;
+          bottom: 25vh;
+          right: 10.2vw;
+          padding: 0;
+        }
+
+        .trans {
+          display: inline;
+          opacity: 0;
+          font: lighter 15vw futura;
+        }
+
+        h2 {
+          margin-left: 52vw;
+          margin-top: 4vh;
+          
+          font: lighter 15vw futura;
+          
+          display: inline-block;
+        }
+
+       /* h2 {
+          margin-left: 54.5vw;
+          margin-top: 0.5vh;
+          
+          font: lighter 15vw futura;
+          font-stretch: condensed;
+          display: inline-block;
+        } */
+
+        .mnis {
+          display: inline; 
+        }
+
+        .nis {
+          display: block;
+          position: absolute;
+          right: 20vw;
+          top: 22vh;
+
+        }
+
+        .caixa {
+          width: 100vw;
+          position: absolute;
+          bottom: 4vh;
+          padding: 0;
+          margin: 0;
+          
+        }
+
+        h3 {
+          text-align: center;
+          font: italic normal 8vw futura;
+          margin:0;
+          margin-top: 5vh; 
+          
+        }
+
+        .dades {
+          text-align: center;
+          font: italic lighter 5.3vw futura;
+          margin: 0px;
+          padding: 0px;
+        }
+
+        .foto {
+          position: absolute;
+          bottom: 1vh;
+          right: 42vw;
+          margin:0;
+          font: normal lighter 2vw futura;
+        }
+
+        .taula {
+          margin:0px;
+          padding: 0px;
+          height: 73vh;
+          
+        }
+
+        #prox {
+          width: 100vw;
+          font: italic lighter 70px futura;
+          text-align: center;
+          margin-top: 2vh;
+          padding:6vw 0 0 0;
+        }
+
+       td {
+        border-bottom: 1px solid #ff8c1a;
+        text-align: center;
+        padding: 1vw;
+        font: normal lighter 25px futura;
+        }
+
+        table {
+          border-collapse: collapse;
+          width: 75vw;
+          margin: auto;
+          table-layout: fixed;
+          margin-top: 6vw;
+        }
+
+        .logo {
+         height: 15vh;
+         width: 25vw;
+         margin: auto;
+         margin-top: 10vh;
+         text-align: center;
+         
+        }
+
+        .you {
+          margin: 2vw;
+          display: none;
+          
+        }
+
+        a {
+          color: #ff8c1a;
+          text-decoration: none;
+        }
+
+        /* sideshow */
+
+       * { box-sizing: border-box; }
+
+        /* Slideshow container */
+        .slideshow-container {
+          width: 100vw;
+          height: 100vh;
+          background-color: black;
+          position: relative;
+          font-size: 0px;
+          background-attachment: fixed;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none; 
+          width: 100vw;
+          overflow: hidden;
+        }
+
+        iframe {
+          border: none;
+          height: 100vh;
+          width: 100vw;
+        }
+
+        .img {
+          display: block;
+          height: 100vh;
+          width: auto;
+          margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: #ff8c1a;
+          font-weight: normal;
+          font-size: 30px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+          color: #ff8c1a;
+          font: normal lighter 20px futura;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+          
+        }
+
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+        #one {
+          position: relative;
+          left: -7vw;
+        }
+
+        #three {
+          position: relative;
+          left: -7vw;
+        }
+
+        #five {
+          position: relative;
+          left: -7vw;
+        }
+
+        #seven {
+          position: relative;
+          left: -7vw;
+        }
+
+        #nine {
+          position: relative;
+          left: -7vw;
+        }
+
+        #ten {
+          position: relative;
+          left: -7vw;
+        }
+      }
+
+@media only screen 
+      
+      and (max-aspect-ratio: 6/5) { 
+
+        body {
+          margin: 0;
+          padding: 0;
+          color: #ff8c1a;
+          background-color: #331a00;
+        }
+        
+        header {
+          height: 100vh;
+          background-image: url(background5.jpg);
+          background-repeat: no-repeat;
+          background-size: 100%; 
+          background-attachment: fixed;
+          margin:0;
+        }
+
+        /* Texts */
+
+        h1 {
+          
+          font: bolder 14vw futura;
+          font-stretch: ultra-condensed;
+          position: absolute;
+          bottom: 67vh;
+        }
+
+        .trans {
+          display: inline;
+          opacity: 0;
+        }
+
+        h2 {
+          margin-left: 4vw;
+          margin-top: 17vh;
+          
+          font: lighter 29vw futura;
+          display: inline-block;
+        }
+
+        .mnis {
+          margin-left: 15vw;
+          
+          display: inline;
+          
+          font: lighter 29vw futura;
+          
+        }
+
+        .nis {
+          display: inline;
+          
+          position: absolute;
+          top: 43vh;
+          right: 9vw;
+          font: lighter 28vw futura;
+
+
+        }
+
+        .caixa {
+          width: 100vw;
+          position: absolute;
+          bottom: 4vh;
+          padding: 0;
+          margin: 0;
+        }
+
+        h3 {
+          text-align: center;
+          font: italic normal 8vw futura;
+          margin:0;
+          margin-top: 5vh; 
+          
+        }
+
+        .dades {
+          text-align: center;
+          font: italic lighter 5.3vw futura;
+          margin: 0;
+          padding: 0;
+        }
+
+        .foto {
+          position: absolute;
+          bottom: 1vh;
+          right: 40vw;
+          margin:0;
+          font: normal lighter 2.5vw futura;
+        }
+
+        .taula {
+          margin:0px;
+          padding: 0px;
+          height: 73vh;
+          
+        }
+
+        #prox {
+          width: 100vw;
+          font: italic lighter 70px futura;
+          text-align: center;
+          margin-top: 2vh;
+          padding:6vw 0 0 0;
+        }
+
+       td {
+        border-bottom: 1px solid #ff8c1a;
+        text-align: center;
+        padding: 1vw;
+        font: normal lighter 25px futura;
+        }
+
+        table {
+          border-collapse: collapse;
+          width: 75vw;
+          margin: auto;
+          table-layout: fixed;
+          margin-top: 6vw;
+        }
+
+        .logo {
+         height: 15vh;
+         width: 25vw;
+         margin: auto;
+         margin-top: 10vh;
+         text-align: center;
+         
+        }
+
+        .you {
+          margin: 2vw;
+          display: none;
+          
+        }
+
+        a {
+          color: #ff8c1a;
+          text-decoration: none;
+        }
+
+        /* sideshow */
+
+       * { box-sizing: border-box; }
+
+        /* Slideshow container */
+        .slideshow-container {
+          width: 100vw;
+          height: 100vh;
+          background-color: black;
+          position: relative;
+          font-size: 0px;
+          background-attachment: fixed;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none; 
+          width: 100vw;
+          overflow: hidden;
+        }
+
+        iframe {
+          border: none;
+          height: 100vh;
+          width: 100vw;
+        }
+
+        .img {
+          display: block;
+          height: 100vh;
+          width: auto;
+          margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: #ff8c1a;
+          font-weight: normal;
+          font-size: 30px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+          color: #ff8c1a;
+          font: normal lighter 20px futura;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+          
+        }
+
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+        #one {
+          position: relative;
+          left: -19vw;
+        }
+
+        #three {
+          position: relative;
+          left: -19vw;
+        }
+
+        #five {
+          position: relative;
+          left: -19vw;
+        }
+
+        #seven {
+          position: relative;
+          left: -19vw;
+        }
+
+        #nine {
+          position: relative;
+          left: -19vw;
+        }
+
+        #ten {
+          position: relative;
+          left: -19vw;
+        }
+      }
+
+@media only screen 
+      
+      and (max-aspect-ratio: 690/702) { 
+
+        body {
+          margin: 0;
+          padding: 0;
+          color: #ff8c1a;
+          background-color: #331a00;
+        }
+        
+        header {
+          height: 100vh;
+          background-image: url(background5.jpg);
+          background-repeat: no-repeat;
+          background-size: 100%; 
+          background-attachment: fixed;
+          margin:0;
+        }
+
+        /* Texts */
+
+        h1 {
+          
+          font: bolder 13vw futura;
+          font-stretch: ultra-condensed;
+          position: absolute;
+          bottom: 15vh;
+          right: 13vw;
+          padding: 0;
+        }
+
+        .trans {
+          display: inline;
+          opacity: 0;
+        }
+
+        h2 {
+          margin-left: 5vw;
+          margin-top: 14vh;
+          
+          font: lighter 31vw futura;
+          display: inline-block;
+        }
+
+        .mnis {
+          margin-left: 11vw;
+          
+          display: inline;
+          border: none;
+          font: lighter 31vw futura;
+          
+        }
+
+        .nis {
+          display: inline;
+          
+          position: absolute;
+          top: 39vh;
+          right: 10.5vw;
+
+
+        }
+
+        .caixa {
+          width: 100vw;
+          position: absolute;
+          bottom: 4vh;
+          padding: 0;
+          margin: 0;
+        }
+
+        h3 {
+          text-align: center;
+          font: italic normal 8vw futura;
+          margin:0;
+          margin-top: 5vh; 
+          
+        }
+
+        .dades {
+          text-align: center;
+          font: italic lighter 5.3vw futura;
+          margin: 0px;
+          padding: 0px;
+        }
+
+        .foto {
+          position: absolute;
+          bottom: 1vh;
+          right: 40vw;
+          margin:0;
+          font: normal lighter 2.5vw futura;
+        }
+
+        .taula {
+          margin:0px;
+          padding: 0px;
+          height: 73vh;
+          
+        }
+
+        #prox {
+          width: 100vw;
+          font: italic lighter 70px futura;
+          text-align: center;
+          margin-top: 2vh;
+          padding:6vw 0 0 0;
+        }
+
+       td {
+        border-bottom: 1px solid #ff8c1a;
+        text-align: center;
+        padding: 1vw;
+        font: normal lighter 25px futura;
+        }
+
+        table {
+          border-collapse: collapse;
+          width: 75vw;
+          margin: auto;
+          table-layout: fixed;
+          margin-top: 6vw;
+        }
+
+        .logo {
+         height: 15vh;
+         width: 25vw;
+         margin: auto;
+         margin-top: 10vh;
+         text-align: center;
+         
+        }
+
+        .you {
+          margin: 2vw;
+          display: none;
+          
+        }
+
+        a {
+          color: #ff8c1a;
+          text-decoration: none;
+        }
+
+        /* sideshow */
+
+       * { box-sizing: border-box; }
+
+        /* Slideshow container */
+        .slideshow-container {
+          width: 100vw;
+          height: 100vh;
+          background-color: black;
+          position: relative;
+          font-size: 0px;
+          background-attachment: fixed;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none; 
+          width: 100vw;
+          overflow: hidden;
+        }
+
+        iframe {
+          border: none;
+          height: 100vh;
+          width: 100vw;
+        }
+
+        .img {
+          display: block;
+          height: 100vh;
+          width: auto;
+          margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: #ff8c1a;
+          font-weight: normal;
+          font-size: 30px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+          color: #ff8c1a;
+          font: normal lighter 20px futura;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+          
+        }
+
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+        #one {
+          position: relative;
+          left: -53vw;
+        }
+
+        #three {
+          position: relative;
+          left: -43vw;
+        }
+
+        #five {
+          position: relative;
+          left: -33vw;
+        }
+
+        #seven {
+          position: relative;
+          left: -53vw;
+        }
+
+        #nine {
+          position: relative;
+          left: -33vw;
+        }
+
+        #ten {
+          position: relative;
+          left: -53vw;
+        }
+      }
+
+@media only screen 
+      
+      and (max-aspect-ratio: 570/702) {
+
+         h1 {
+          
+          font: bolder 15vw futura;
+          font-stretch: ultra-condensed;
+          position: absolute;
+          bottom: 22vh;
+          right: 8vw;
+          padding: 0;
+        }
+
+        h2 {
+          margin-left: 5vw;
+          margin-top: 11vh;
+          
+          font: lighter 31vw futura;
+          display: inline-block;
+        }
+
+        .mnis {
+          margin-left: 11vw;
+          
+          display: inline;
+          border: none;
+          font: lighter 31vw futura;
+          
+        }
+
+        .nis {
+          display: inline;
+          
+          position: absolute;
+          top: 36vh;
+          right: 10.5vw;
+        }
+
+        .caixa {
+          width: 100vw;
+          position: absolute;
+          bottom: 4vh;
+          padding: 0;
+          margin: 0;
+        }
+
+        h3 {
+          text-align: center;
+          font: italic normal 12vw futura;
+          margin:0;
+          margin-top: 5vh; 
+          
+        }
+
+        .dades {
+          text-align: center;
+          font: italic lighter 7.5vw futura;
+          margin: 0px;
+          padding: 0px;
+        }
+
+        .foto {
+          position: absolute;
+          bottom: 1vh;
+          right: 35vw;
+          margin:0;
+          font: normal lighter 3.5vw futura;
+        }
+
+        .taula {
+          margin:0px;
+          padding: 0px;
+          height: 73vh;
+          
+        }
+
+        #prox {
+          width: 100vw;
+          font: italic lighter 55px futura;
+          text-align: center;
+          margin-top: 2vh;
+          padding:6vw 0 0 0;
+        }
+
+       td {
+        border-bottom: 1px solid #ff8c1a;
+        text-align: center;
+        padding: 1vw;
+        font: normal lighter 20px futura;
+        }
+
+        .mySlides {
+          display: none; 
+          width: 100vw;
+          overflow: hidden;
+        }
+
+        #one {
+          position: relative;
+          left: -85vw;
+        }
+
+        #three {
+          position: relative;
+          left: -85vw;
+        }
+
+        #five {
+          position: relative;
+          left: -45vw;
+        }
+
+        #seven {
+          position: relative;
+          left: -85vw;
+        }
+
+        #nine {
+          position: relative;
+          left: -50vw;
+        }
+
+        #ten {
+          position: relative;
+          left: -50vw;
+        }
+      }
+
+@media only screen 
+      
+      and (max-aspect-ratio: 450/702) {
+
+         h1 {
+          
+          font: bolder 15vw futura;
+          font-stretch: ultra-condensed;
+          position: absolute;
+          bottom: 40vh;
+          right: 8vw;
+          padding: 0;
+        }
+
+        h2 {
+          margin-left: 5vw;
+          margin-top: 8vh;
+          
+          font: lighter 31vw futura;
+          display: inline-block;
+        }
+
+        .mnis {
+          margin-left: 11vw;
+          
+          display: inline;
+          border: none;
+          font: lighter 31vw futura;
+          
+        }
+
+        .nis {
+          display: inline;
+          
+          position: absolute;
+          top: 27vh;
+          right: 10.5vw;
+        }
+
+        .caixa {
+          width: 100vw;
+          position: absolute;
+          bottom: 5vh;
+          padding: 0;
+          margin: 0;
+          
+        }
+
+        h3 {
+          text-align: center;
+          font: italic normal 14vw futura;
+          padding-bottom: 5vh; 
+          
+        }
+
+        .dades {
+          text-align: center;
+          font: italic lighter 8.7vw futura;
+          margin: 0;
+          padding-bottom: 5vh;
+          
+        }
+
+        .foto {
+          position: absolute;
+          bottom: 1vh;
+          right: 27vw;
+          margin:0;
+          font: normal lighter 5vw futura;
+        }
+        
+        .taula {
+          margin:0px;
+          padding: 0px;
+          height: 73vh;
+          
+        }
+
+        #prox {
+          width: 100vw;
+          font: italic lighter 55px futura;
+          text-align: center;
+          margin-top: 2vh;
+          padding:6vw 0 0 0;
+        }
+
+       td {
+        border-bottom: 1px solid #ff8c1a;
+        text-align: center;
+        padding: 1vw;
+        font: normal lighter 20px futura;
+        }
+
+        table {
+          border-collapse: collapse;
+          width: 75vw;
+          height: 35vh;
+          margin: auto;
+          table-layout: fixed;
+          margin-top: 15vw;
+        }
+
+        .mySlides {
+          display: none; 
+          width: 100vw;
+          overflow: hidden;
+        }
+
+        #one {
+          position: relative;
+          left: -130vw;
+        }
+
+        #three {
+          position: relative;
+          left: -130vw;
+        }
+
+        #five {
+          position: relative;
+          left: -80vw;
+        }
+
+        #seven {
+          position: relative;
+          left: -110vw;
+        }
+
+        #nine {
+          position: relative;
+          left: -60vw;
+        }
+
+        #ten {
+          position: relative;
+          left: -70vw;
+        }
+      }
+
+@media only screen 
+      
+      and (max-aspect-ratio: 377/704) {
+
+        h1 {
+          
+          font: bolder 15vw futura;
+          font-stretch: ultra-condensed;
+          position: absolute;
+          bottom: 49vh;
+          right: 7vw;
+          padding: 0;
+        }
+
+        h2 {
+          margin-left: 5vw;
+          margin-top: 7.5vh;
+          
+          font: lighter 31vw futura;
+          display: inline-block;
+        }
+
+        .mnis {
+          margin-left: 12vw;
+          
+          display: inline;
+          border: none;
+          font: lighter 31vw futura;
+          
+        }
+
+        .nis {
+          display: inline;
+          
+          position: absolute;
+          top: 22vh;
+          right: 11vw;
+        }
+
+        .caixa {
+          width: 100vw;
+          position: absolute;
+          bottom: 20vh;
+          padding: 0;
+          margin: 0;
+          
+        }
+
+        h3 {
+          text-align: center;
+          font: italic normal 14vw futura;
+          padding-bottom: 5vh; 
+          
+        }
+
+        .dades {
+          text-align: center;
+          font: italic lighter 8.7vw futura;
+          margin: 0;
+          padding-bottom: 5vh;
+        }
+
+        .foto {
+          position: absolute;
+          bottom: 1vh;
+          right: 28vw;
+          margin:0;
+          font: normal lighter 5vw futura;
+        }
+
+        .taula {
+          margin:0px;
+          padding: 0px;
+          height: 73vh;
+          
+        }
+
+        #prox {
+          width: 100vw;
+          font: italic lighter 55px futura;
+          text-align: center;
+          margin-top: 2vh;
+          padding:6vw 0 0 0;
+        }
+
+       td {
+        border-bottom: 1px solid #ff8c1a;
+        text-align: center;
+        padding: 1vw;
+        font: normal lighter 20px futura;
+        }
+
+        table {
+          border-collapse: collapse;
+          width: 75vw;
+          height: 35vh;
+          margin: auto;
+          table-layout: fixed;
+          margin-top: 15vw;
+        }
+
+        .logo {
+         height: 15vh;
+         width: 25vw;
+         margin: auto;
+         margin-top: 10vh;
+         text-align: center;
+         
+        }
+
+        .you {
+          margin: 2vw;
+          display: none;
+          
+        }
+
+        a {
+          color: #ff8c1a;
+          text-decoration: none;
+        }
+
+        /* sideshow */
+
+       * { box-sizing: border-box; }
+
+        /* Slideshow container */
+        .slideshow-container {
+          width: 100vw;
+          height: 100vh;
+          background-color: black;
+          position: relative;
+          font-size: 0px;
+          background-attachment: fixed;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none; 
+          width: 100vw;
+          overflow: hidden;
+        }
+
+        iframe {
+          border: none;
+          height: 100vh;
+          width: 100vw;
+        }
+
+        .img {
+          display: block;
+          height: 100vh;
+          width: auto;
+          margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: #ff8c1a;
+          font-weight: normal;
+          font-size: 30px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+          color: #ff8c1a;
+          font: normal lighter 20px futura;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+          
+        }
+
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+
+        #one {
+          position: relative;
+          left: -160vw;
+        }
+
+        #two {
+          position: relative;
+          left: -20vw;
+        }
+
+        #three {
+          position: relative;
+          left: -160vw;
+        }
+
+        #four {
+          position: relative;
+          left: -20vw;
+        }
+
+        #five {
+          position: relative;
+          left: -100vw;
+        }
+
+        #six {
+          position: relative;
+          left: -20vw;
+        }
+
+        #seven {
+          position: relative;
+          left: -130vw;
+        }
+
+        #eight {
+          position: relative;
+          left: -20vw;
+        }
+
+        #nine {
+          position: relative;
+          left: -70vw;
+        }
+
+        #ten {
+          position: relative;
+          left: -90vw;
+        }
+
+      }      
+
+@media only screen 
+      
+      and (max-aspect-ratio: 315/630) { 
+
+        body {
+          margin: 0;
+          padding: 0;
+          color: #ff8c1a;
+          background-color: #331a00;
+        }
+        
+        header {
+          
+          height: 100vh;
+
+          background-image: url(background6.jpg);
+          background-repeat: no-repeat;
+          background-size: 100%; 
+          background-attachment: fixed;
+          margin:0;
+        }
+
+        /* Texts */
+
+        h1 {
+          
+          font: bolder 15vw futura;
+          font-stretch: ultra-condensed;
+          position: absolute;
+          bottom: 49vh;
+          right: 7vw;
+          padding: 0;
+        }
+
+        .trans {
+          display: inline;
+          opacity: 0;
+        }
+
+        h2 {
+          margin-left: 0.5vw;
+          margin-top: 7.5vh;
+          
+          font: lighter 36vw futura;
+          display: inline-block;
+        }
+
+         .mnis {
+          display: inline;
+          font: lighter 36vw futura;
+          position: absolute;
+          left: 32vw;
+          border: none;
+          
+        }
+
+        .nis {
+          display: inline;
+          position: absolute;
+          top: 15vh;
+          left: 3vw;
+          border: none;
+          
+        }
+
+        .caixa {
+          width: 100vw;
+          position: absolute;
+          bottom: 21vh;
+          padding: 0;
+          margin: 0;
+          
+        }
+
+        h3 {
+          text-align: center;
+          font: italic normal 14vw futura;
+          padding-bottom: 5vh; 
+          
+        }
+
+        .dades {
+          text-align: center;
+          font: italic lighter 8.7vw futura;
+          margin: 0;
+          padding-bottom: 5vh;
+          
+        }
+
+        .foto {
+          position: absolute;
+          bottom: 1vh;
+          right: 33vw;
+          margin:0;
+          font: normal lighter 5vw futura;
+        }
+
+        .taula {
+          margin:0px;
+          padding: 0px;
+          height: 73vh;
+          
+        }
+
+        #prox {
+          width: 100vw;
+          font: italic lighter 55px futura;
+          text-align: center;
+          margin-top: 2vh;
+          padding:6vw 0 0 0;
+        }
+
+       td {
+        border-bottom: 1px solid #ff8c1a;
+        text-align: center;
+        padding: 1vw;
+        font: normal lighter 20px futura;
+        }
+
+        table {
+          border-collapse: collapse;
+          width: 75vw;
+          height: 35vh;
+          margin: auto;
+          table-layout: fixed;
+          margin-top: 15vw;
+        }
+
+        .logo {
+         height: 15vh;
+         width: 25vw;
+         margin: auto;
+         margin-top: 10vh;
+         text-align: center;
+         
+        }
+
+        .you {
+          margin: 2vw;
+          display: none;
+          
+        }
+
+        a {
+          color: #ff8c1a;
+          text-decoration: none;
+        }
+
+        /* sideshow */
+
+       * { box-sizing: border-box; }
+
+        /* Slideshow container */
+        .slideshow-container {
+          width: 100vw;
+          height: 100vh;
+          background-color: black;
+          position: relative;
+          font-size: 0px;
+          background-attachment: fixed;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none; 
+          width: 100vw;
+          overflow: hidden;
+        }
+
+        iframe {
+          border: none;
+          height: 100vh;
+          width: 100vw;
+        }
+
+        .img {
+          display: block;
+          height: 100vh;
+          width: auto;
+          margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: #ff8c1a;
+          font-weight: normal;
+          font-size: 30px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+          color: #ff8c1a;
+          font: normal lighter 20px futura;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+          
+        }
+
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+
+        #one {
+          position: relative;
+          left: -170vw;
+        }
+
+        #two {
+          position: relative;
+          left: -20vw;
+        }
+
+        #three {
+          position: relative;
+          left: -170vw;
+        }
+
+        #four {
+          position: relative;
+          left: -20vw;
+        }
+
+
+        #five {
+          position: relative;
+          left: -130vw;
+        }
+
+        #six {
+          position: relative;
+          left: -20vw;
+        }
+
+
+        #seven {
+          position: relative;
+          left: -150vw;
+        }
+
+        #eight {
+          position: relative;
+          left: -20vw;
+        }
+
+
+        #nine {
+          position: relative;
+          left: -70vw;
+        }
+
+
+        #ten {
+          position: relative;
+          left: -110vw;
+        }
+      }
+    
+    
+    
+    
