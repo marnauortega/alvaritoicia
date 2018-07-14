@@ -243,7 +243,7 @@
 
         h3 {
           text-align: center;
-          font: italic normal  8vw futuraf, sans-serif;
+          font: italic normal 8vw futuramed, sans-serif;
           margin:0;
           padding-bottom: 4vh; 
         }
@@ -403,7 +403,7 @@
         }
 
         @font-face {
-          font-family: "futuraf";
+          font-family: "futuramed";
           font-weight: normal;
           font-style: italic;
           src: url('font/futura-mediumoblique.otf') format('opentype');
