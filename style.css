@@ -243,7 +243,7 @@
 
         h3 {
           text-align: center;
-          font: italic normal 8vw futura, sans-serif;
+          font: italic normal 8vw futuramed, sans-serif;
           margin:0;
           padding-bottom: 4vh; 
         }
@@ -400,6 +400,11 @@
         @keyframes fade {
           from {opacity: .4}
           to {opacity: 1}
+        }
+
+        @font-face {
+          font-family: futuramed;
+          src: url(font/futura-medium.otf);
         }
 
       }
