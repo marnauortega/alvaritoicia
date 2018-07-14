@@ -216,10 +216,9 @@
           background-image: url(background.jpg);
           background-repeat: no-repeat;
           background-size: 100%; 
-          position: fixed;
+          background-attachment: fixed;
           margin:0;
           -webkit-backface-visibility: visible; 
-          
         }
 
         .lletres {
