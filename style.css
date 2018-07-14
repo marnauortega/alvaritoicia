@@ -221,7 +221,7 @@
         }
 
         .lletres {
-          height: 100vh;
+          height: 100%;
           background-image: url(background_lletres.png);
           background-repeat: no-repeat;
           background-size: 100%; 
@@ -423,7 +423,7 @@
         }
 
         .lletres {
-          height: 100vh;
+          height: 100%;
           background-image: url(background2_lletres.png);
           background-repeat: no-repeat;
           background-size: 100%; 
