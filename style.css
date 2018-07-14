@@ -202,7 +202,7 @@
 
 @media only screen 
       and (min-width: 900px)
-      and (min-aspect-ratio: 1443/785) { 
+      and (min-aspect-ratio: 1443/876) { 
 
         body {
           margin: 0;
@@ -405,7 +405,7 @@
 
 @media only screen 
       
-      and (max-aspect-ratio: 1443/785) { 
+      and (max-aspect-ratio: 1443/876) { 
 
         body {
           margin: 0;
