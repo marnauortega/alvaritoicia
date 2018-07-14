@@ -403,21 +403,21 @@
         }
 
         @font-face {
-          font-family: futuramed;
-          src: url(font/futura-mediumoblique.otf) format("opentype");
+          font-family: "futuramed";
+          src: url('font/futura-mediumoblique.otf') format('opentype');
         }
 
         @font-face {
-          font-family: futuraf;
+          font-family: "futuraf";
           font-weight: lighter;
-          src: url(font/futura-light.otf) format("opentype");
+          src: url('font/futura-light.otf') format('opentype');
         }
 
         @font-face {
-          font-family: futuraf;
+          font-family: "futuraf";
           font-weight: lighter;
           font-style: italic;
-          src: url(font/futura-lightoblique.otf) format("opentype");
+          src: url('font/futura-lightoblique.otf') format('opentype');
         }
 
       }
