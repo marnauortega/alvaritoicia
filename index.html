@@ -9,10 +9,11 @@
    		 <title>Alvarito i Cia - Somnis</title>
    		 <link rel="stylesheet" href="style.css">
   		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  	 </head>
 
   	<body>
-   		<header data-stellar-background-ratio="0.4"> <!--data-stellar-background-ratio="0.4"-->
+   		<header > <!--data-stellar-background-ratio="0.4"-->
     		<div class="lletres">
     			
     		<div class="caixa">	
@@ -169,31 +170,35 @@
 					slides[slideIndex-1].style.display = "block";
 					dots[slideIndex-1].className += " active";
 				} 
+
+		/* disable paralax for portable devices */
+				
 		var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
-};
-jQuery(document).ready(function(){
-    if( !isMobile.any() ){
-        $(window).stellar();
-    }
-});
+		    Android: function() {
+		        return navigator.userAgent.match(/Android/i);
+		    },
+		    BlackBerry: function() {
+		        return navigator.userAgent.match(/BlackBerry/i);
+		    },
+		    iOS: function() {
+		        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		    },
+		    Opera: function() {
+		        return navigator.userAgent.match(/Opera Mini/i);
+		    },
+		    Windows: function() {
+		        return navigator.userAgent.match(/IEMobile/i);
+		    },
+		    any: function() {
+		        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+			}
+		};
+
+		jQuery(document).ready(function(){
+		    if( !isMobile.any() ){
+		        $(window).stellar();
+		    }
+		});
 	</script>
 
 </html>
