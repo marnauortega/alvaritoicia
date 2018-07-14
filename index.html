@@ -3,7 +3,7 @@
 
   	<head>
     	<meta charset="UTF-8"/>
-   		 <meta name="viewport" content="width=device-width, initial scale=1.0">
+   		 <meta name="viewport" content="width=device-width; initial scale=1.0; maximum-scale=1.0;">
    		 <meta name="description" content="Pàgina web de la companyia de circ Alvarito i Cia">
    		 <meta http-equiv= "X-UA-COmpatible" content="ie=edge">
    		 <title>Alvarito i Cia - Somnis</title>
@@ -169,6 +169,31 @@
 					slides[slideIndex-1].style.display = "block";
 					dots[slideIndex-1].className += " active";
 				} 
+		var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+jQuery(document).ready(function(){
+    if( !isMobile.any() ){
+        $(window).stellar();
+    }
+});
 	</script>
 
 </html>
