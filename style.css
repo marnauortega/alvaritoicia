@@ -243,14 +243,14 @@
 
         h3 {
           text-align: center;
-          font: normal 8vw futuramed, sans-serif;
+          font: normal italic 8vw futuraf, sans-serif;
           margin:0;
           padding-bottom: 4vh; 
         }
 
         .dades {
           text-align: center;
-          font: italic lighter 5.3vw futura, sans-serif;
+          font: italic lighter 5.3vw futuraf, sans-serif;
           margin: 0px;
           padding: 0px;
         }
@@ -260,7 +260,7 @@
           bottom: 1vh;
           right: 43vw;
           margin:0;
-          font: normal lighter 1vw futura, sans-serif;
+          font: normal lighter 1vw futuraf, sans-serif;
         }
 
         .taula {
@@ -271,7 +271,7 @@
 
         #prox {
           width: 100vw;
-          font: italic lighter 70px futura, sans-serif;
+          font: italic lighter 70px futuraf, sans-serif;
           text-align: center;
           margin-top: 0;
           padding:6vw 0 0 0;
@@ -403,8 +403,23 @@
         }
 
         @font-face {
-          font-family: futuramed;
-          src: url(font/futura-medium.otf) format("opentype");
+          font-family: futuraf;
+          font-weight: normal;
+          font-style: italic;
+          src: url(font/futura-mediumoblique.otf) format("opentype");
+        }
+
+        @font-face {
+          font-family: futuraf;
+          font-weight: lighter;
+          src: url(font/futura-light.otf) format("opentype");
+        }
+
+        @font-face {
+          font-family: futuraf;
+          font-weight: lighter;
+          font-style: italic;
+          src: url(font/futura-lightoblique.otf) format("opentype");
         }
 
       }
