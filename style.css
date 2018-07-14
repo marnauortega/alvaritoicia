@@ -1,6 +1,6 @@
 @media only screen 
       and (max-width: 900px)
-      and (min-aspect-ratio: 17/9) { 
+      and (min-aspect-ratio: 1443/876) { 
 
         body {
           margin: 0;
@@ -216,8 +216,9 @@
           background-image: url(background.jpg);
           background-repeat: no-repeat;
           background-size: 100%; 
-          background-attachment: fixed;
+          position: fixed;
           margin:0;
+          -webkit-backface-visibility: visible; 
           
         }
 
