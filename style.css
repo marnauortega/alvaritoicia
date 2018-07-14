@@ -209,6 +209,7 @@
           padding: 0;
           color: #ff8c1a;
           background-color: #331a00;
+          position: static;
         }
         
         header {
