@@ -40,14 +40,14 @@
 
         h3 {
           text-align: center;
-          font: italic normal 8vw futura, sans-serif;
+          font: italic normal 8vw futuramed, sans-serif;
           margin:0;
           padding-bottom: 4vh; 
         }
 
         .dades {
           text-align: center;
-          font: italic lighter 5.3vw futura, sans-serif;
+          font: italic lighter 5.3vw futuraf, sans-serif;
           margin: 0px;
           padding: 0px;
         }
@@ -57,7 +57,7 @@
           bottom: 1vh;
           right: 38vw;
           margin:0;
-          font: normal lighter 2vw futura, sans-serif;
+          font: normal lighter 2vw futuraf, sans-serif;
         }
 
         .taula {
@@ -68,7 +68,7 @@
 
         #prox {
           width: 100vw;
-          font: italic lighter 50px futura, sans-serif;
+          font: italic lighter 50px futuraf, sans-serif;
           text-align: center;
           margin-top: 0;
           padding:3vw 0 0 0;
@@ -78,7 +78,7 @@
         border-bottom: 1px solid #ff8c1a;
         text-align: center;
         padding: 1vw;
-        font: normal lighter 15px futura, sans-serif;
+        font: normal lighter 15px futuraf, sans-serif;
         }
 
         table {
@@ -172,7 +172,7 @@
         /* Caption text */
         .text {
           color: #ff8c1a;
-          font: normal lighter 15px futura, sans-serif;
+          font: normal lighter 15px futuraf, sans-serif;
           padding: 8px 12px;
           position: absolute;
           bottom: 8px;
@@ -197,6 +197,25 @@
         @keyframes fade {
           from {opacity: .4}
           to {opacity: 1}
+        }
+
+        @font-face {
+          font-family: "futuramed";
+          src: url('font/futura-mediumoblique.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: normal;
+          src: url('font/futura-light.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: italic;
+          src: url('font/futura-lightoblique.otf') format('opentype');
         }
       }
 
@@ -463,7 +482,7 @@
 
         h3 {
           text-align: center;
-          font: italic normal 8vw futura, sans-serif;
+          font: italic normal 8vw futuramed, sans-serif;
           margin:0;
           margin-top: 5vh; 
           
@@ -471,7 +490,7 @@
 
         .dades {
           text-align: center;
-          font: italic lighter 5.3vw futura, sans-serif;
+          font: italic lighter 5.3vw futuraf, sans-serif;
           margin: 0px;
           padding: 0px;
         }
@@ -481,7 +500,7 @@
           bottom: 1vh;
           right: 43vw;
           margin:0;
-          font: normal lighter 1.5vw futura, sans-serif;
+          font: normal lighter 1.5vw futuraf, sans-serif;
         }
 
         .taula {
@@ -493,7 +512,7 @@
 
         #prox {
           width: 100vw;
-          font: italic lighter 70px futura, sans-serif;
+          font: italic lighter 70px futuraf, sans-serif;
           text-align: center;
           margin-top: 2vh;
           padding:6vw 0 0 0;
@@ -503,7 +522,7 @@
         border-bottom: 1px solid #ff8c1a;
         text-align: center;
         padding: 1vw;
-        font: normal lighter 25px futura, sans-serif;
+        font: normal lighter 25px futuraf, sans-serif;
         }
 
         table {
@@ -598,7 +617,7 @@
         /* Caption text */
         .text {
           color: #ff8c1a;
-          font: normal lighter 20px futura, sans-serif;
+          font: normal lighter 20px futuraf, sans-serif;
           padding: 8px 12px;
           position: absolute;
           bottom: 8px;
@@ -623,6 +642,25 @@
         @keyframes fade {
           from {opacity: .4}
           to {opacity: 1}
+        }
+
+        @font-face {
+          font-family: "futuramed";
+          src: url('font/futura-mediumoblique.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: normal;
+          src: url('font/futura-light.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: italic;
+          src: url('font/futura-lightoblique.otf') format('opentype');
         }
 
       }
@@ -669,7 +707,7 @@
 
         h3 {
           text-align: center;
-          font: italic normal 8vw futura, sans-serif;
+          font: italic normal 8vw futuramed, sans-serif;
           margin:0;
           margin-top: 5vh; 
           
@@ -677,7 +715,7 @@
 
         .dades {
           text-align: center;
-          font: italic lighter 5.3vw futura, sans-serif;
+          font: italic lighter 5.3vw futuraf, sans-serif;
           margin: 0px;
           padding: 0px;
         }
@@ -687,7 +725,7 @@
           bottom: 1vh;
           right: 42vw;
           margin:0;
-          font: normal lighter 2vw futura, sans-serif;
+          font: normal lighter 2vw futuraf, sans-serif;
         }
 
         .taula {
@@ -699,7 +737,7 @@
 
         #prox {
           width: 100vw;
-          font: italic lighter 70px futura, sans-serif;
+          font: italic lighter 70px futuraf, sans-serif;
           text-align: center;
           margin-top: 2vh;
           padding:6vw 0 0 0;
@@ -709,7 +747,7 @@
         border-bottom: 1px solid #ff8c1a;
         text-align: center;
         padding: 1vw;
-        font: normal lighter 25px futura, sans-serif;
+        font: normal lighter 25px futuraf, sans-serif;
         }
 
         table {
@@ -803,7 +841,7 @@
         /* Caption text */
         .text {
           color: #ff8c1a;
-          font: normal lighter 20px futura, sans-serif;
+          font: normal lighter 20px futuraf, sans-serif;
           padding: 8px 12px;
           position: absolute;
           bottom: 8px;
@@ -869,6 +907,25 @@
           position: relative;
           left: -7vw;
         }
+
+        @font-face {
+          font-family: "futuramed";
+          src: url('font/futura-mediumoblique.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: normal;
+          src: url('font/futura-light.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: italic;
+          src: url('font/futura-lightoblique.otf') format('opentype');
+        }
       }
 
 @media only screen 
@@ -912,7 +969,7 @@
 
         h3 {
           text-align: center;
-          font: italic normal 8vw futura, sans-serif;
+          font: italic normal 8vw futuramed, sans-serif;
           margin:0;
           margin-top: 5vh; 
           
@@ -920,7 +977,7 @@
 
         .dades {
           text-align: center;
-          font: italic lighter 5.3vw futura, sans-serif;
+          font: italic lighter 5.3vw futuraf, sans-serif;
           margin: 0;
           padding: 0;
         }
@@ -930,7 +987,7 @@
           bottom: 1vh;
           right: 40vw;
           margin:0;
-          font: normal lighter 2.5vw futura, sans-serif;
+          font: normal lighter 2.5vw futuraf, sans-serif;
         }
 
         .taula {
@@ -942,7 +999,7 @@
 
         #prox {
           width: 100vw;
-          font: italic lighter 70px futura, sans-serif;
+          font: italic lighter 70px futuraf, sans-serif;
           text-align: center;
           margin-top: 2vh;
           padding:6vw 0 0 0;
@@ -952,7 +1009,7 @@
         border-bottom: 1px solid #ff8c1a;
         text-align: center;
         padding: 1vw;
-        font: normal lighter 25px futura, sans-serif;
+        font: normal lighter 25px futuraf, sans-serif;
         }
 
         table {
@@ -1046,7 +1103,7 @@
         /* Caption text */
         .text {
           color: #ff8c1a;
-          font: normal lighter 20px futura, sans-serif;
+          font: normal lighter 20px futuraf, sans-serif;
           padding: 8px 12px;
           position: absolute;
           bottom: 8px;
@@ -1112,6 +1169,25 @@
           position: relative;
           left: -19vw;
         }
+
+        @font-face {
+          font-family: "futuramed";
+          src: url('font/futura-mediumoblique.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: normal;
+          src: url('font/futura-light.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: italic;
+          src: url('font/futura-lightoblique.otf') format('opentype');
+        }
       }
 
 @media only screen 
@@ -1154,7 +1230,7 @@
 
         h3 {
           text-align: center;
-          font: italic normal 8vw futura, sans-serif;
+          font: italic normal 8vw futuramed, sans-serif;
           margin:0;
           margin-top: 5vh; 
           
@@ -1162,7 +1238,7 @@
 
         .dades {
           text-align: center;
-          font: italic lighter 5.3vw futura, sans-serif;
+          font: italic lighter 5.3vw futuraf, sans-serif;
           margin: 0px;
           padding: 0px;
         }
@@ -1172,7 +1248,7 @@
           bottom: 1vh;
           right: 40vw;
           margin:0;
-          font: normal lighter 2.5vw futura, sans-serif;
+          font: normal lighter 2.5vw futuraf, sans-serif;
         }
 
         .taula {
@@ -1184,7 +1260,7 @@
 
         #prox {
           width: 100vw;
-          font: italic lighter 70px futura, sans-serif;
+          font: italic lighter 70px futuraf, sans-serif;
           text-align: center;
           margin-top: 2vh;
           padding:6vw 0 0 0;
@@ -1194,7 +1270,7 @@
         border-bottom: 1px solid #ff8c1a;
         text-align: center;
         padding: 1vw;
-        font: normal lighter 25px futura, sans-serif;
+        font: normal lighter 25px futuraf, sans-serif;
         }
 
         table {
@@ -1288,7 +1364,7 @@
         /* Caption text */
         .text {
           color: #ff8c1a;
-          font: normal lighter 20px futura, sans-serif;
+          font: normal lighter 20px futuraf, sans-serif;
           padding: 8px 12px;
           position: absolute;
           bottom: 8px;
@@ -1354,6 +1430,25 @@
           position: relative;
           left: -53vw;
         }
+
+        @font-face {
+          font-family: "futuramed";
+          src: url('font/futura-mediumoblique.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: normal;
+          src: url('font/futura-light.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: italic;
+          src: url('font/futura-lightoblique.otf') format('opentype');
+        }
       }
 
 @media only screen 
@@ -1378,7 +1473,7 @@
 
         h3 {
           text-align: center;
-          font: italic normal 12vw futura, sans-serif;
+          font: italic normal 12vw futuramed, sans-serif;
           margin:0;
           margin-top: 5vh; 
           
@@ -1386,7 +1481,7 @@
 
         .dades {
           text-align: center;
-          font: italic lighter 7.5vw futura, sans-serif;
+          font: italic lighter 7.5vw futuraf, sans-serif;
           margin: 0px;
           padding: 0px;
         }
@@ -1396,7 +1491,7 @@
           bottom: 1vh;
           right: 35vw;
           margin:0;
-          font: normal lighter 3.5vw futura, sans-serif;
+          font: normal lighter 3.5vw futuraf, sans-serif;
         }
 
         .taula {
@@ -1408,7 +1503,7 @@
 
         #prox {
           width: 100vw;
-          font: italic lighter 55px futura, sans-serif;
+          font: italic lighter 55px futuraf, sans-serif;
           text-align: center;
           margin-top: 2vh;
           padding:6vw 0 0 0;
@@ -1418,7 +1513,7 @@
         border-bottom: 1px solid #ff8c1a;
         text-align: center;
         padding: 1vw;
-        font: normal lighter 20px futura, sans-serif;
+        font: normal lighter 20px futuraf, sans-serif;
         }
 
         .mySlides {
@@ -1466,6 +1561,25 @@
           position: relative;
           left: -50vw;
         }
+
+        @font-face {
+          font-family: "futuramed";
+          src: url('font/futura-mediumoblique.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: normal;
+          src: url('font/futura-light.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: italic;
+          src: url('font/futura-lightoblique.otf') format('opentype');
+        }
       }
 
 @media only screen 
@@ -1491,14 +1605,14 @@
 
         h3 {
           text-align: center;
-          font: italic normal 14vw futura, sans-serif;
+          font: italic normal 14vw futuramed, sans-serif;
           padding-bottom: 5vh; 
           
         }
 
         .dades {
           text-align: center;
-          font: italic lighter 8vw futura, sans-serif;
+          font: italic lighter 8vw futuraf, sans-serif;
           margin: 0;
           padding-bottom: 5vh;
           
@@ -1509,7 +1623,7 @@
           bottom: 1vh;
           right: 27vw;
           margin:0;
-          font: normal lighter 5vw futura, sans-serif;
+          font: normal lighter 5vw futuraf, sans-serif;
         }
         
         .taula {
@@ -1521,7 +1635,7 @@
 
         #prox {
           width: 100vw;
-          font: italic lighter 55px futura, sans-serif;
+          font: italic lighter 55px futuraf, sans-serif;
           text-align: center;
           margin-top: 2vh;
           padding:6vw 0 0 0;
@@ -1531,7 +1645,7 @@
         border-bottom: 1px solid #ff8c1a;
         text-align: center;
         padding: 1vw;
-        font: normal lighter 20px futura, sans-serif;
+        font: normal lighter 20px futuraf, sans-serif;
         }
 
         table {
@@ -1588,6 +1702,25 @@
           position: relative;
           left: -70vw;
         }
+
+        @font-face {
+          font-family: "futuramed";
+          src: url('font/futura-mediumoblique.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: normal;
+          src: url('font/futura-light.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: italic;
+          src: url('font/futura-lightoblique.otf') format('opentype');
+        }
       }
 
 @media only screen 
@@ -1613,14 +1746,14 @@
 
         h3 {
           text-align: center;
-          font: italic normal 14vw futura, sans-serif;
+          font: italic normal 14vw futuramed, sans-serif;
           padding-bottom: 7vh; 
           
         }
 
         .dades {
           text-align: center;
-          font: italic lighter 8vw futura, sans-serif;
+          font: italic lighter 8vw futuraf, sans-serif;
           margin: 0;
           padding-bottom: 5vh;
         }
@@ -1630,7 +1763,7 @@
           bottom: 1vh;
           right: 28vw;
           margin:0;
-          font: normal lighter 5vw futura, sans-serif;
+          font: normal lighter 5vw futuraf, sans-serif;
         }
 
         .taula {
@@ -1642,7 +1775,7 @@
 
         #prox {
           width: 100vw;
-          font: italic lighter 55px futura, sans-serif;
+          font: italic lighter 55px futuraf, sans-serif;
           text-align: center;
           margin-top: 2vh;
           padding:6vw 0 0 0;
@@ -1652,7 +1785,7 @@
         border-bottom: 1px solid #ff8c1a;
         text-align: center;
         padding: 1vw;
-        font: normal lighter 20px futura, sans-serif;
+        font: normal lighter 20px futuraf, sans-serif;
         }
 
         table {
@@ -1747,7 +1880,7 @@
         /* Caption text */
         .text {
           color: #ff8c1a;
-          font: normal lighter 20px futura, sans-serif;
+          font: normal lighter 20px futuraf, sans-serif;
           padding: 8px 12px;
           position: absolute;
           bottom: 8px;
@@ -1840,6 +1973,25 @@
           left: -90vw;
         }
 
+        @font-face {
+          font-family: "futuramed";
+          src: url('font/futura-mediumoblique.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: normal;
+          src: url('font/futura-light.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: italic;
+          src: url('font/futura-lightoblique.otf') format('opentype');
+        }
+
       }      
 
 @media only screen 
@@ -1887,14 +2039,14 @@
 
         h3 {
           text-align: center;
-          font: italic normal 14vw futura, sans-serif;
+          font: italic normal 14vw futuramed, sans-serif;
           padding-bottom: 5vh; 
           
         }
 
         .dades {
           text-align: center;
-          font: italic lighter 8vw futura, sans-serif;
+          font: italic lighter 8vw futuraf, sans-serif;
           margin: 0;
           padding-bottom: 5vh;
           
@@ -1905,7 +2057,7 @@
           bottom: 1vh;
           right: 33vw;
           margin:0;
-          font: normal lighter 5vw futura, sans-serif;
+          font: normal lighter 5vw futuraf, sans-serif;
         }
 
         .taula {
@@ -1917,7 +2069,7 @@
 
         #prox {
           width: 100vw;
-          font: italic lighter 55px futura, sans-serif;
+          font: italic lighter 55px futuraf, sans-serif;
           text-align: center;
           margin-top: 2vh;
           padding:6vw 0 0 0;
@@ -1927,7 +2079,7 @@
         border-bottom: 1px solid #ff8c1a;
         text-align: center;
         padding: 1vw;
-        font: normal lighter 20px futura, sans-serif;
+        font: normal lighter 20px futuraf, sans-serif;
         }
 
         table {
@@ -2022,7 +2174,7 @@
         /* Caption text */
         .text {
           color: #ff8c1a;
-          font: normal lighter 20px futura, sans-serif;
+          font: normal lighter 20px futuraf, sans-serif;
           padding: 8px 12px;
           position: absolute;
           bottom: 8px;
@@ -2115,6 +2267,25 @@
         #thirteen {
           position: relative;
           left: -110vw;
+        }
+
+        @font-face {
+          font-family: "futuramed";
+          src: url('font/futura-mediumoblique.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: normal;
+          src: url('font/futura-light.otf') format('opentype');
+        }
+
+        @font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: italic;
+          src: url('font/futura-lightoblique.otf') format('opentype');
         }
       }
     
