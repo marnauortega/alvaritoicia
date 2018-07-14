@@ -404,7 +404,7 @@
 
         @font-face {
           font-family: "futuraf";
-          font-size: normal;
+          font-weight: normal;
           font-style: italic;
           src: url('font/futura-mediumoblique.otf') format('opentype');
         }
@@ -412,7 +412,7 @@
         @font-face {
           font-family: "futuraf";
           font-weight: lighter;
-          font-size: normal;
+          font-style: normal;
           src: url('font/futura-light.otf') format('opentype');
         }
 
