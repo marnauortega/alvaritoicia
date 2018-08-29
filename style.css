@@ -8,6 +8,60 @@
           color: #f2f213;
           background-color: #331a00;
         }
+
+        #loader-wrapper {
+          position: fixed;
+          top:0;
+          left:0;
+          height:100%;
+          width: 100%;
+          z-index: 1000; 
+          background-color: #331a00;      
+        }
+
+        #text {
+          display: block;
+          position: relative;
+          margin: 0;
+          padding: 0;
+          top: 8%;
+          left: 30%;
+
+        }
+
+        @keyframes apareixer {
+          from {width:0;}
+          to {width:20%;}
+        }
+
+        #carregant {
+          font: italic lighter 5vw futuraf, sans-serif;
+          margin: 0;
+          padding: 0;
+          width: 0;  
+          overflow: hidden; 
+          animation-name: apareixer;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: ease;
+          animation-delay: 0;
+        }
+
+        #loader {
+          display: block;
+          position: absolute;
+          left: 60%;
+          top: 7%;
+          width: 7%;
+          height: 20%;
+          margin: 0;
+          background-color: #331a00;
+          background-image: url(ull.png);
+          background-repeat: no-repeat;
+          background-size: contain;      
+        }
+
         
         header {
           
@@ -218,6 +272,21 @@
           src: url('font/futura-lightoblique.otf') format('opentype');
         }
 
+        
+      }
+
+@media only screen 
+      and (min-width: 900px)
+      and (min-aspect-ratio: 1440/781) { 
+
+        body {
+          margin: 0;
+          padding: 0;
+          color: #f2f213;
+          background-color: #331a00;
+          position: static;
+        }
+
         #loader-wrapper {
           position: fixed;
           top:0;
@@ -225,7 +294,8 @@
           height:100%;
           width: 100%;
           z-index: 1000; 
-          background-color: #331a00;      
+          background-color: #331a00;
+          
         }
 
         #text {
@@ -261,7 +331,7 @@
           display: block;
           position: absolute;
           left: 60%;
-          top: 7%;
+          top: 7.3%;
           width: 7%;
           height: 20%;
           margin: 0;
@@ -269,20 +339,6 @@
           background-image: url(ull.png);
           background-repeat: no-repeat;
           background-size: contain;      
-        }
-
-      }
-
-@media only screen 
-      and (min-width: 900px)
-      and (min-aspect-ratio: 1440/781) { 
-
-        body {
-          margin: 0;
-          padding: 0;
-          color: #f2f213;
-          background-color: #331a00;
-          position: static;
         }
         
         header {
@@ -494,6 +550,21 @@
           src: url('font/futura-lightoblique.otf') format('opentype');
         }
 
+        
+
+      }
+
+@media only screen 
+      
+      and (max-aspect-ratio: 1440/781) { 
+
+        body {
+          margin: 0;
+          padding: 0;
+          color: #f2f213;
+          background-color: #331a00;
+        }
+
         #loader-wrapper {
           position: fixed;
           top:0;
@@ -502,7 +573,7 @@
           width: 100%;
           z-index: 1000; 
           background-color: #331a00;
-          
+            
         }
 
         #text {
@@ -510,8 +581,8 @@
           position: relative;
           margin: 0;
           padding: 0;
-          top: 8%;
-          left: 30%;
+          top: 10%;
+          left: 20%;
 
         }
 
@@ -537,28 +608,15 @@
         #loader {
           display: block;
           position: absolute;
-          left: 60%;
+          left: 48%;
           top: 7.3%;
-          width: 7%;
+          width: 9%;
           height: 20%;
           margin: 0;
           background-color: #331a00;
           background-image: url(ull.png);
           background-repeat: no-repeat;
           background-size: contain;      
-        }
-
-      }
-
-@media only screen 
-      
-      and (max-aspect-ratio: 1440/781) { 
-
-        body {
-          margin: 0;
-          padding: 0;
-          color: #f2f213;
-          background-color: #331a00;
         }
         
         header {
@@ -771,7 +829,22 @@
           src: url('font/futura-lightoblique.otf') format('opentype');
         }
 
-        #loader-wrapper {
+        
+
+      }
+
+@media only screen 
+      
+      and (max-aspect-ratio: 721/512) { 
+
+        body {
+          margin: 0;
+          padding: 0;
+          color: #f2f213;
+          background-color: #331a00;
+        }
+
+         #loader-wrapper {
           position: fixed;
           top:0;
           left:0;
@@ -779,7 +852,7 @@
           width: 100%;
           z-index: 1000; 
           background-color: #331a00;
-            
+           
         }
 
         #text {
@@ -787,18 +860,18 @@
           position: relative;
           margin: 0;
           padding: 0;
-          top: 10%;
-          left: 20%;
+          top: 8%;
+          left: 26%;
 
         }
 
         @keyframes apareixer {
           from {width:0;}
-          to {width:20%;}
+          to {width:30%;}
         }
 
         #carregant {
-          font: italic lighter 5vw futuraf, sans-serif;
+          font: italic lighter 8vw futuraf, sans-serif;
           margin: 0;
           padding: 0;
           width: 0;  
@@ -814,28 +887,15 @@
         #loader {
           display: block;
           position: absolute;
-          left: 48%;
-          top: 7.3%;
-          width: 9%;
+          left: 60.5%;
+          top: 7.2%;
+          width: 11.5%;
           height: 20%;
           margin: 0;
           background-color: #331a00;
           background-image: url(ull.png);
           background-repeat: no-repeat;
           background-size: contain;      
-        }
-
-      }
-
-@media only screen 
-      
-      and (max-aspect-ratio: 721/512) { 
-
-        body {
-          margin: 0;
-          padding: 0;
-          color: #f2f213;
-          background-color: #331a00;
         }
         
         header {
@@ -1089,6 +1149,20 @@
           src: url('font/futura-lightoblique.otf') format('opentype');
         }
 
+       
+      }
+
+@media only screen 
+      
+      and (max-aspect-ratio: 6/5) { 
+
+        body {
+          margin: 0;
+          padding: 0;
+          color: #f2f213;
+          background-color: #331a00;
+        }
+
         #loader-wrapper {
           position: fixed;
           top:0;
@@ -1097,7 +1171,7 @@
           width: 100%;
           z-index: 1000; 
           background-color: #331a00;
-           
+            
         }
 
         #text {
@@ -1105,8 +1179,8 @@
           position: relative;
           margin: 0;
           padding: 0;
-          top: 8%;
-          left: 26%;
+          top: 55%;
+          left: 15%;
 
         }
 
@@ -1132,27 +1206,16 @@
         #loader {
           display: block;
           position: absolute;
-          left: 60.5%;
-          top: 7.2%;
-          width: 11.5%;
-          height: 20%;
+          left: 22%;
+          top: 23%;
+          width: 23%;
+          height: 30%;
           margin: 0;
           background-color: #331a00;
           background-image: url(ull.png);
           background-repeat: no-repeat;
-          background-size: contain;      
-        }
-      }
-
-@media only screen 
-      
-      and (max-aspect-ratio: 6/5) { 
-
-        body {
-          margin: 0;
-          padding: 0;
-          color: #f2f213;
-          background-color: #331a00;
+          background-size: contain; 
+                    
         }
         
         header {
@@ -1405,6 +1468,20 @@
           src: url('font/futura-lightoblique.otf') format('opentype');
         }
 
+        
+      }
+
+@media only screen 
+      
+      and (max-aspect-ratio: 690/702) { 
+
+        body {
+          margin: 0;
+          padding: 0;
+          color: #f2f213;
+          background-color: #331a00;
+        }
+
         #loader-wrapper {
           position: fixed;
           top:0;
@@ -1413,7 +1490,7 @@
           width: 100%;
           z-index: 1000; 
           background-color: #331a00;
-            
+          
         }
 
         #text {
@@ -1421,18 +1498,18 @@
           position: relative;
           margin: 0;
           padding: 0;
-          top: 55%;
-          left: 15%;
+          top: 45%;
+          left: 7%;
 
         }
 
         @keyframes apareixer {
           from {width:0;}
-          to {width:30%;}
+          to {width:40%;}
         }
 
         #carregant {
-          font: italic lighter 8vw futuraf, sans-serif;
+          font: italic lighter 10vw futuraf, sans-serif;
           margin: 0;
           padding: 0;
           width: 0;  
@@ -1449,27 +1526,15 @@
           display: block;
           position: absolute;
           left: 22%;
-          top: 23%;
-          width: 23%;
-          height: 30%;
+          top: 19.5%;
+          width: 22%;
+          height: 25%;
           margin: 0;
           background-color: #331a00;
           background-image: url(ull.png);
           background-repeat: no-repeat;
           background-size: contain; 
-                    
-        }
-      }
-
-@media only screen 
-      
-      and (max-aspect-ratio: 690/702) { 
-
-        body {
-          margin: 0;
-          padding: 0;
-          color: #f2f213;
-          background-color: #331a00;
+                            
         }
         
         header {
@@ -1721,60 +1786,7 @@
           src: url('font/futura-lightoblique.otf') format('opentype');
         }
 
-        #loader-wrapper {
-          position: fixed;
-          top:0;
-          left:0;
-          height:100%;
-          width: 100%;
-          z-index: 1000; 
-          background-color: #331a00;
-          
-        }
-
-        #text {
-          display: block;
-          position: relative;
-          margin: 0;
-          padding: 0;
-          top: 45%;
-          left: 7%;
-
-        }
-
-        @keyframes apareixer {
-          from {width:0;}
-          to {width:40%;}
-        }
-
-        #carregant {
-          font: italic lighter 10vw futuraf, sans-serif;
-          margin: 0;
-          padding: 0;
-          width: 0;  
-          overflow: hidden; 
-          animation-name: apareixer;
-          animation-duration: 3s;
-          animation-iteration-count: infinite;
-          animation-direction: alternate;
-          animation-timing-function: ease;
-          animation-delay: 0;
-        }
-
-        #loader {
-          display: block;
-          position: absolute;
-          left: 22%;
-          top: 19.5%;
-          width: 22%;
-          height: 25%;
-          margin: 0;
-          background-color: #331a00;
-          background-image: url(ull.png);
-          background-repeat: no-repeat;
-          background-size: contain; 
-                            
-        }
+        
       }
 
 @media only screen 
