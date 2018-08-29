@@ -1,6 +1,6 @@
 @media only screen 
       and (max-width: 900px)
-      and (min-aspect-ratio: 1443/876) { 
+      and (min-aspect-ratio: 1440/781) { 
 
         body {
           margin: 0;
@@ -270,12 +270,12 @@
           background-repeat: no-repeat;
           background-size: contain;      
         }
-        
+
       }
 
 @media only screen 
       and (min-width: 900px)
-      and (min-aspect-ratio: 1443/876) { 
+      and (min-aspect-ratio: 1440/781) { 
 
         body {
           margin: 0;
@@ -494,11 +494,65 @@
           src: url('font/futura-lightoblique.otf') format('opentype');
         }
 
+        #loader-wrapper {
+          position: fixed;
+          top:0;
+          left:0;
+          height:100%;
+          width: 100%;
+          z-index: 1000; 
+          background-color: #331a00;
+          
+        }
+
+        #text {
+          display: block;
+          position: relative;
+          margin: 0;
+          padding: 0;
+          top: 8%;
+          left: 30%;
+
+        }
+
+        @keyframes apareixer {
+          from {width:0;}
+          to {width:20%;}
+        }
+
+        #carregant {
+          font: italic lighter 5vw futuraf, sans-serif;
+          margin: 0;
+          padding: 0;
+          width: 0;  
+          overflow: hidden; 
+          animation-name: apareixer;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: ease;
+          animation-delay: 0;
+        }
+
+        #loader {
+          display: block;
+          position: absolute;
+          left: 60%;
+          top: 7.3%;
+          width: 7%;
+          height: 20%;
+          margin: 0;
+          background-color: #331a00;
+          background-image: url(ull.png);
+          background-repeat: no-repeat;
+          background-size: contain;      
+        }
+
       }
 
 @media only screen 
       
-      and (max-aspect-ratio: 1443/876) { 
+      and (max-aspect-ratio: 1440/781) { 
 
         body {
           margin: 0;
@@ -715,6 +769,60 @@
           font-weight: lighter;
           font-style: italic;
           src: url('font/futura-lightoblique.otf') format('opentype');
+        }
+
+        #loader-wrapper {
+          position: fixed;
+          top:0;
+          left:0;
+          height:100%;
+          width: 100%;
+          z-index: 1000; 
+          background-color: #331a00;
+            
+        }
+
+        #text {
+          display: block;
+          position: relative;
+          margin: 0;
+          padding: 0;
+          top: 10%;
+          left: 20%;
+
+        }
+
+        @keyframes apareixer {
+          from {width:0;}
+          to {width:20%;}
+        }
+
+        #carregant {
+          font: italic lighter 5vw futuraf, sans-serif;
+          margin: 0;
+          padding: 0;
+          width: 0;  
+          overflow: hidden; 
+          animation-name: apareixer;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: ease;
+          animation-delay: 0;
+        }
+
+        #loader {
+          display: block;
+          position: absolute;
+          left: 48%;
+          top: 7.3%;
+          width: 9%;
+          height: 20%;
+          margin: 0;
+          background-color: #331a00;
+          background-image: url(ull.png);
+          background-repeat: no-repeat;
+          background-size: contain;      
         }
 
       }
@@ -980,6 +1088,60 @@
           font-style: italic;
           src: url('font/futura-lightoblique.otf') format('opentype');
         }
+
+        #loader-wrapper {
+          position: fixed;
+          top:0;
+          left:0;
+          height:100%;
+          width: 100%;
+          z-index: 1000; 
+          background-color: #331a00;
+           
+        }
+
+        #text {
+          display: block;
+          position: relative;
+          margin: 0;
+          padding: 0;
+          top: 8%;
+          left: 26%;
+
+        }
+
+        @keyframes apareixer {
+          from {width:0;}
+          to {width:30%;}
+        }
+
+        #carregant {
+          font: italic lighter 8vw futuraf, sans-serif;
+          margin: 0;
+          padding: 0;
+          width: 0;  
+          overflow: hidden; 
+          animation-name: apareixer;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: ease;
+          animation-delay: 0;
+        }
+
+        #loader {
+          display: block;
+          position: absolute;
+          left: 60.5%;
+          top: 7.2%;
+          width: 11.5%;
+          height: 20%;
+          margin: 0;
+          background-color: #331a00;
+          background-image: url(ull.png);
+          background-repeat: no-repeat;
+          background-size: contain;      
+        }
       }
 
 @media only screen 
@@ -1242,6 +1404,61 @@
           font-style: italic;
           src: url('font/futura-lightoblique.otf') format('opentype');
         }
+
+        #loader-wrapper {
+          position: fixed;
+          top:0;
+          left:0;
+          height:100%;
+          width: 100%;
+          z-index: 1000; 
+          background-color: #331a00;
+            
+        }
+
+        #text {
+          display: block;
+          position: relative;
+          margin: 0;
+          padding: 0;
+          top: 55%;
+          left: 15%;
+
+        }
+
+        @keyframes apareixer {
+          from {width:0;}
+          to {width:30%;}
+        }
+
+        #carregant {
+          font: italic lighter 8vw futuraf, sans-serif;
+          margin: 0;
+          padding: 0;
+          width: 0;  
+          overflow: hidden; 
+          animation-name: apareixer;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: ease;
+          animation-delay: 0;
+        }
+
+        #loader {
+          display: block;
+          position: absolute;
+          left: 22%;
+          top: 23%;
+          width: 23%;
+          height: 30%;
+          margin: 0;
+          background-color: #331a00;
+          background-image: url(ull.png);
+          background-repeat: no-repeat;
+          background-size: contain; 
+                    
+        }
       }
 
 @media only screen 
@@ -1503,6 +1720,61 @@
           font-style: italic;
           src: url('font/futura-lightoblique.otf') format('opentype');
         }
+
+        #loader-wrapper {
+          position: fixed;
+          top:0;
+          left:0;
+          height:100%;
+          width: 100%;
+          z-index: 1000; 
+          background-color: #331a00;
+          
+        }
+
+        #text {
+          display: block;
+          position: relative;
+          margin: 0;
+          padding: 0;
+          top: 45%;
+          left: 7%;
+
+        }
+
+        @keyframes apareixer {
+          from {width:0;}
+          to {width:40%;}
+        }
+
+        #carregant {
+          font: italic lighter 10vw futuraf, sans-serif;
+          margin: 0;
+          padding: 0;
+          width: 0;  
+          overflow: hidden; 
+          animation-name: apareixer;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: ease;
+          animation-delay: 0;
+        }
+
+        #loader {
+          display: block;
+          position: absolute;
+          left: 22%;
+          top: 19.5%;
+          width: 22%;
+          height: 25%;
+          margin: 0;
+          background-color: #331a00;
+          background-image: url(ull.png);
+          background-repeat: no-repeat;
+          background-size: contain; 
+                            
+        }
       }
 
 @media only screen 
@@ -1633,6 +1905,61 @@
           font-weight: lighter;
           font-style: italic;
           src: url('font/futura-lightoblique.otf') format('opentype');
+        }
+
+        #loader-wrapper {
+          position: fixed;
+          top:0;
+          left:0;
+          height:100%;
+          width: 100%;
+          z-index: 1000; 
+          background-color: #331a00;
+          
+        }
+
+        #text {
+          display: block;
+          position: relative;
+          margin: 0;
+          padding: 0;
+          top: 38%;
+          left: 7%;
+
+        }
+
+        @keyframes apareixer {
+          from {width:0;}
+          to {width:40%;}
+        }
+
+        #carregant {
+          font: italic lighter 10vw futuraf, sans-serif;
+          margin: 0;
+          padding: 0;
+          width: 0;  
+          overflow: hidden; 
+          animation-name: apareixer;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: ease;
+          animation-delay: 0;
+        }
+
+        #loader {
+          display: block;
+          position: absolute;
+          left: 22%;
+          top: 15.5%;
+          width: 22%;
+          height: 25%;
+          margin: 0;
+          background-color: #331a00;
+          background-image: url(ull.png);
+          background-repeat: no-repeat;
+          background-size: contain; 
+                            
         }
       }
 
@@ -1774,6 +2101,61 @@
           font-weight: lighter;
           font-style: italic;
           src: url('font/futura-lightoblique.otf') format('opentype');
+        }
+
+        #loader-wrapper {
+          position: fixed;
+          top:0;
+          left:0;
+          height:100%;
+          width: 100%;
+          z-index: 1000; 
+          background-color: #331a00;
+          
+        }
+
+        #text {
+          display: block;
+          position: relative;
+          margin: 0;
+          padding: 0;
+          top: 32%;
+          left: 7%;
+
+        }
+
+        @keyframes apareixer {
+          from {width:0;}
+          to {width:40%;}
+        }
+
+        #carregant {
+          font: italic lighter 10vw futuraf, sans-serif;
+          margin: 0;
+          padding: 0;
+          width: 0;  
+          overflow: hidden; 
+          animation-name: apareixer;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: ease;
+          animation-delay: 0;
+        }
+
+        #loader {
+          display: block;
+          position: absolute;
+          left: 22%;
+          top: 13%;
+          width: 22%;
+          height: 20%;
+          margin: 0;
+          background-color: #331a00;
+          background-image: url(ull.png);
+          background-repeat: no-repeat;
+          background-size: contain; 
+                            
         }
       }
 
@@ -2044,6 +2426,61 @@
           font-weight: lighter;
           font-style: italic;
           src: url('font/futura-lightoblique.otf') format('opentype');
+        }
+
+        #loader-wrapper {
+          position: fixed;
+          top:0;
+          left:0;
+          height:100%;
+          width: 100%;
+          z-index: 1000; 
+          background-color: #331a00;
+          
+        }
+
+        #text {
+          display: block;
+          position: relative;
+          margin: 0;
+          padding: 0;
+          top: 27%;
+          left: 7%;
+
+        }
+
+        @keyframes apareixer {
+          from {width:0;}
+          to {width:40%;}
+        }
+
+        #carregant {
+          font: italic lighter 10vw futuraf, sans-serif;
+          margin: 0;
+          padding: 0;
+          width: 0;  
+          overflow: hidden; 
+          animation-name: apareixer;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: ease;
+          animation-delay: 0;
+        }
+
+        #loader {
+          display: block;
+          position: absolute;
+          left: 22%;
+          top: 11.3%;
+          width: 22%;
+          height: 17%;
+          margin: 0;
+          background-color: #331a00;
+          background-image: url(ull.png);
+          background-repeat: no-repeat;
+          background-size: contain; 
+                            
         }
 
       }      
@@ -2340,6 +2777,61 @@
           font-weight: lighter;
           font-style: italic;
           src: url('font/futura-lightoblique.otf') format('opentype');
+        }
+
+        #loader-wrapper {
+          position: fixed;
+          top:0;
+          left:0;
+          height:100%;
+          width: 100%;
+          z-index: 1000; 
+          background-color: #331a00;
+    
+        }
+
+        #text {
+          display: block;
+          position: relative;
+          margin: 0;
+          padding: 0;
+          top: 27%;
+          left: 5%;
+
+        }
+
+        @keyframes apareixer {
+          from {width:0;}
+          to {width:40%;}
+        }
+
+        #carregant {
+          font: italic lighter 10vw futuraf, sans-serif;
+          margin: 0;
+          padding: 0;
+          width: 0;  
+          overflow: hidden; 
+          animation-name: apareixer;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: ease;
+          animation-delay: 0;
+        }
+
+        #loader {
+          display: block;
+          position: absolute;
+          left: 19%;
+          top: 11.5%;
+          width: 25%;
+          height: 17%;
+          margin: 0;
+          background-color: #331a00;
+          background-image: url(ull.png);
+          background-repeat: no-repeat;
+          background-size: contain; 
+                            
         }
       }
     
