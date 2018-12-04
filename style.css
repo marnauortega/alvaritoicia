@@ -683,6 +683,7 @@ span{
 }
 
 #prox{
+	color: #F3602A;
 	width: 100vw;
 	align-self: end;
 	grid-row: 2/3;
