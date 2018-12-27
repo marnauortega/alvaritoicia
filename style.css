@@ -1214,6 +1214,22 @@ h6{
 	border-width: 0;
 }
 
+
+.text_copyright{
+	color: white;
+	text-align: center;
+	align-self: end;
+	grid-column: 2/3;
+	grid-row: 1/2;
+	margin-bottom: 7vh;
+}
+
+.copyright{
+	font: lighter 18px futuraf, Sans-Serif;
+	color: #F3602A;
+	mix-blend-mode: screen;
+}
+
 }
 
 /*-------------------------------------------------------------------------------------------*/
@@ -2256,7 +2272,6 @@ table{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
-	border: 1px solid blue;
 }
 
 .marge_contacte{
@@ -2295,6 +2310,16 @@ h6{
 	grid-row: 1/2;
 	border-width: 0;
 }
+
+.text_copyright{
+	color: white;
+	text-align: center;
+	align-self: end;
+	grid-column: 1/3;
+	grid-row: 1/2;
+	border-width: 0;
+}
+
 
 }
 
