@@ -1,7 +1,83 @@
+/*--- Fonts---*/
+
+@font-face {
+          font-family: "futuraf";
+          font-weight: lighter;
+          font-style: normal;
+          src: url('font/futura-light.otf') format('opentype');
+        }
+
+
+@font-face {
+          font-family: "futuraf";
+          font-weight: bold;
+          font-style: normal;
+          src: url('font/futura-bold.otf') format('opentype');
+        }
+
+@font-face {
+          font-family: "futuram";
+          font-weight: normal;
+          font-style: normal;
+          src: url('font/futura-medium.otf') format('opentype');
+        }
+
+body{
+	font-size: 0;
+}
+
+#wrapperdos{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	z-index: 6;
+	transition: opacity 1s;
+}
+
+.wrapperdos_invisible{
+	opacity: 0;
+	pointer-events: none;
+
+}
+
+svg {
+	position: fixed;
+ 	width: 100%;
+ 	height: 100vh;
+ 	z-index: 6;
+}
+
+.retol{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+
+.carregant{
+	color: #F3602A;
+	text-align: center;
+	font: italic lighter 50px futuraf, sans-serif;
+	opacity: 1;
+	transition: all 1s linear;
+}
+
+.carregant_invisible{
+	opacity: 0;
+	font-size: 47px;
+}
+
+@media only screen and (min-width: 100px) {
+
+html{
+	background-color: black;
+}
+
 body{
 	margin: 0;
 	padding: 0;
-	
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -9,15 +85,34 @@ h1, h2, h3, h4, h5, h6, p{
 	padding: 0;
 }
 
+h2{
+	font: bold 13.9vw futuraf, Sans-Serif;
+	color: #F3602A;
+	line-height: 87%;
+}
+
 h1{
 	font: lighter 180px futuraf, Sans-Serif;
 	line-height: 46%;
 	margin: 0 0 0 -10px;
+	color: #F3602A;
+	z-index: 1;
 }
 
 h4, h5{
 	font: bold 40px futuraf, Sans-Serif;
 	line-height: 46%;
+}
+
+.hideme{
+	opacity: 0;
+	transform: translate(0, 30px); 
+  	transition: opacity 1.5s, transform 1.5s;
+}
+
+.visible{
+	opacity: 1;
+ 	transform: translate(0, 0);
 }
 
 li{
@@ -48,8 +143,13 @@ a:link, a:visited{
 	text-decoration: none;
 }
 
+
+.transicio{
+	transition: all 0.2s ease-in-out;
+}
+
 a:hover, a.active{
-	color: #F3602A;
+	color: #F3602A !important;
 	background-color: transparent;
 	text-decoration: none;
 }
@@ -70,16 +170,46 @@ a:hover, a.active{
 	background-color: black;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
 	height: 100vh;
 	grid-column:1/4;
 	grid-row: 1/5;
+	z-index: 1;
+}
+
+.marc_inici{
+	position: relative;
+	height: 0;
+	padding-bottom: 100vh;
+	grid-column:1/4;
+	grid-row-start: 1;
+
+}
+
+.marc{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border: 18px solid #F3602A;
+	z-index: 1;
+	transition: border 0.3s linear;
+}
+
+.marc-invisible{
+	transition: border 0.3s linear;
+	border-width: 0px;
 }
 
 .header{
 	width: 100%;
 	height: 130px;
 	display: grid;
-	grid-template-rows: 70px 60px 190px auto;
+	grid-template-rows: 76px 60px 190px auto;
 	grid-template-columns: 80px auto 80px;
 	position: fixed;
 	top: 0;
@@ -103,16 +233,16 @@ a:hover, a.active{
 }
 
 .header--wide{
-	background-color: black;
+	background-color: transparent;
 	width: 100%;
-	height: 170px;
+	height: 180px;
 	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
 	z-index: 4;
 	display: grid;
-	grid-template-rows: 90px 60px 190px auto;
+	grid-template-rows: 12.85vh 60px 190px auto;
 	grid-template-columns: 80px auto 80px;
 }
 
@@ -125,7 +255,7 @@ a:hover, a.active{
 }
 
 .nav{
-
+	
 	grid-column: 1/3;
     grid-row: 1/2;
     align-self: end;
@@ -141,11 +271,11 @@ ul{
 
 li{
     float: left;
-    margin: 0 65px 0 0;
+    margin: 0 55px 0 0;
     line-height: 46%;
 }
 
-.ultim{
+#ultim{
 	margin: 0;
 }
 
@@ -157,6 +287,9 @@ li{
 	grid-column: 2/3;
     grid-row: 1/4;
     align-self: end;
+    z-index: 1;
+    letter-spacing: 0px;
+    transition: letter-spacing 1.5s linear;
 }
 
 .idioma{
@@ -167,66 +300,167 @@ li{
     justify-self: end;
 }
 
-
 /*--- Secció Vídeo---*/
 
+/* Versió amb marc taronja i fons negre
+
 .video{
-	height: 110vh;
+	height: 62.3vw;
 	background-color: black;
 	display: grid;
-	grid-template-rows: 80px auto 80px ;
-	grid-template-columns: 80px auto 80px;
+	grid-template-rows: 100px auto 100px ;
+	grid-template-columns: 100px auto 100px;
+}
+
+.marc_marge{
+	-webkit-grid-column: 2/3;
+    -webkit-grid-row: 2/3;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.marc_video{
+	position: relative;
+	padding-bottom: 49.4vw;
+	background-color: transparent;
+}
+
+.video_youtube{
+    position: absolute;
+	top: 0;
+	left: 0;
+	height: 95%;
+	width: 97.2%;
+	border: none;
+	box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.5);
+    border: 18px solid #DB3F08;
+}
+*/
+
+.video{
+	position: relative;
+	height: auto;
+	background-color: #F3602A;
+	display: grid;
+	grid-template-rows: 3fr 405px 2fr;
+}
+
+.vinyeta {
+	/*border: 1px solid red;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 200px rgba(0,0,0,0.6) inset;
+}
+
+.degradat{
+	/*border: 1px solid blue;*/
+  position: absolute;
+
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-image: linear-gradient(to bottom, #F3602A, transparent);
+}
+
+.media_titol{
+	color: black;
+	grid-row: 1/2;
+	width: 100%;
+	z-index: 1;
+}
+
+.centrat_titol{
+	width: 100%;
+	margin-top: 5vh;
+	text-align: center;
+	line-height: 20%;
+	margin-top: 14vh;
+
+}
+
+.situador{
+	grid-row: 2/3;
+	grid-column: 1/2;
+	/*background-color: #f64809;*/
+	display: grid;
+
+
 }
 
 iframe{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    border: 18px solid #F3602A;
+	margin: auto;
+	height: 405px;
+	width: 720px;
+	border: none;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4), 0 6px 10px 0 rgba(0, 0, 0, 0.1);  
+	transition: box-shadow 0.4s ease-in-out;
+	/*padding: 18px;
+	border: 2px solid #DB3F08;*/
+	z-index: 1;
+}
+
+iframe:hover{
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.7), 0 6px 25px 0 rgba(0, 0, 0, 0.4);
 }
 
 /*--- Secció Dossier---*/
 
-.dossier{
-	height: 25vh;
+/*.dossier{
+	height: 60vh;
 	background-color: black;
 	text-align: center;
 	display: grid;
+	z-index: 4;
+}*/
 
+.fitxa_fons{
+	grid-row: 3/4;
+	width: 100%;
+	height: 20vh;
+	display: grid;
+	z-index: 3;
 }
 
 #fitxa_boto{
-	align-self: center;
 	display: inline-block;
 	width: 300px;
-	margin: auto;
+	margin: auto;	
 }
 
-.fitxa_fons{
-	width: 100vw;
-	background-color: #F3602A;
-	height: 25vh;
-	display: grid;
-}
+/*.textura_video{
+	height: 100vh;
+	background: url(img/textura@3x.png);
+	background-size: contain;
+	mix-blend-mode: multiply;
+}*/
+
+
 
 #fitxa_text{
+	text-align: center;
 	color: black;
 	font: lighter 26px futuraf, Sans-Serif;
+	
 }
 
 #fitxa_text:hover{
 	margin-top: 6px;
 	padding-bottom: 5px;
 	border-bottom: 1px solid black;
+	
 }
 
 /*--- Secció Espectacle---*/
 
 .espectacle{
-	height: 100vh;
+	height: 780px;
 	background-color: black;
 	color: white;
 	display: grid;
-	grid-template-rows: 260px auto;
+	grid-template-rows: 35vh auto;
 	grid-template-columns: 50% auto 80px;	
 }
 
@@ -234,6 +468,15 @@ iframe{
 	background: url(img/escala_sssssd.png), url(img/escala_ssssd.jpg), url(img/escala_sssd.jpg), url(img/escala_ssd.jpg), url(img/escala_sd.jpg);
 	background-repeat: no-repeat;
 	background-size: contain;
+	grid-row: 1/3;
+	grid-column: 1/4;
+}
+
+.fons_sobre{
+	background: url(img/escala_sssssd_sobre.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: 1;
 	grid-row: 1/3;
 	grid-column: 1/4;
 }
@@ -247,106 +490,144 @@ iframe{
 	grid-template-columns: 66px auto 80px;
 }
 
-h2{
+.espectacle_titol_posicio{
 	grid-row: 2/3;
 	grid-column: 2/3;
-	font: bold 13.9vw futuraf, Sans-Serif;
-	color: #F3602A;
-	line-height: 87%;
 }
 
 #text_espectacle{
 	grid-column: 2/3;
 	grid-row: 2/3;
 	text-align: justify;
+	z-index: 2;
+	margin-top: 10vh; 
 }
 
 .dreta{
 	text-align: right;
 }
+
+@media only screen and (min-width: 769px) {
 /*--- Secció Idea---*/
 
 .idea{
 	height: 100vh;
 	background-color: #F3602A;
 	display: grid;
-	grid-template-rows: 30px 230px auto 30px;
-	grid-template-columns: 80px auto 80px 419px 30px;
+	grid-template-rows: /*30px 230px*/ 30px 29.5vh auto 30px;
+	grid-template-columns: auto 419px 30px;
+}
+
+.textura{
+	grid-column: 1/4;
+	grid-row: 1/5;
+	background: url(img/textura@3x.png);
+	background-size: contain;
+	mix-blend-mode: multiply;
 }
 
 #idea{
-	grid-column: 2/3;
+	grid-column: 1/2;
 	grid-row: 1/3;
+	padding-left: 80px;
 }
 
 #text_idea{
-	grid-column: 2/3;
+	grid-column: 1/2;
 	grid-row: 3/4;
+	padding-left: 80px;
+	padding-right: 80px;
 }
 
 .foto_berlin{
-	grid-column:4/5;
+	grid-column: 2/3;
 	grid-row: 2/4;
+	background-color: yellow;	
 	background: url(img/equilibri_berlin.png), url(img/equilibri_berlin_ssd.jpg), url(img/equilibri_berlin_sd.jpg);
-	background-size: contain;
+	background-size: cover;
 }
+
 
 /*--- Secció Tècnica ---*/
 
 .tecnica{
-	height: 150vh;
+	height: 1200px;
 	background-color: black;
 	display: grid;
-	grid-template-rows: 260px auto 160px;
-	grid-template-columns: auto 44px 640px 80px ;
+	grid-template-rows: 50% 50%;
+	grid-template-columns: 50% 50%;
 }
 
 .fons_tecnica{
 	background: url(img/equilibri_nena_ssssd.png), url(img/equilibri_nena_sssd.jpg), url(img/equilibri_nena_ssd.jpg), url(img/equilibri_nena_sd.jpg);
 	background-repeat: no-repeat;
-	background-size: contain;
-	height: 150vh;
-	grid-row-start: 1;
-	grid-column: 1/5;
+	background-size: cover;
+	height: 1200px;
+	grid-column: 1/3;
+	grid-row: 1/3;
 }
 
-#tecnica{
-	grid-column: 2/4;
+.paragraf_tecnica{
+	grid-column: 1/3;
 	grid-row: 1/2;
+	margin-top: 80px;
+	margin-right: 80px;
 	text-align: right;
+	align-self: center;
+
+}
+
+
+#tecnica{
+	text-align: right;
+
 }
 
 #text_tecnica{
 	color: white;
 	text-align: right;
-	grid-column: 3/4;
-	grid-row: 2/3;
+	width: 425px;
+	float: right;
 }
 
 .foto_marc{
-	grid-row: 2/3;
-	grid-column: 2/4;
-	align-self: end;
+	position: relative;
+	grid-row-start: 2;
+	height: 28vw;
+	grid-column: 2/3;
+	margin-right: 80px;
+	margin-bottom: 15vh;
+	align-self: center;
 }
 
 .foto_fons{
 	background-color: #DB3F08;
-	height: 461px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
 	display: grid;
 }
 
 .foto_pals{
 	background:url(img/pals.png), url(img/pals_sd.jpg);
+	background-repeat: no-repeat;
 	background-size: contain;
-	height: 425px;
-	margin: 18px;
+	position: absolute;
+	top: 18px;
+	left: 18px;
+	right: 18px;
+	bottom: 18px;
 	align-self: center;	
 }
 
 /*--- Secció Interacció ---*/
 
 .interaccio{
-	height: 120vh;
+	height: 937px;
 	background-color: black;
 	display: grid;
 	grid-template-rows: 1px auto;
@@ -357,7 +638,8 @@ h2{
 	background: url(img/tub.png), url(img/tub_sssd.jpg), url(img/tub_ssd.jpg), url(img/tub_sd.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 120vh;
+	background-position: center center;
+	height: 937px;
 	grid-column: 1/4;
 }
 
@@ -371,57 +653,77 @@ h2{
 /*--- Secció Música ---*/
 
 .musica{
-	height: 139.3vh;
+	height: 1088px;
 	background-color: black;
 	display: grid;
-	grid-template-rows: 260px auto 100px;
-	grid-template-columns: 80px 470px 214px auto;
+	grid-template-rows: 50% 50%;
+	grid-template-columns: 50% 50%;
 }
 
 .fons_musica{
 	background: url(img/pals_percussio.png), url(img/pals_percussio_sssd.jpg), url(img/pals_percussio_ssd.jpg), url(img/pals_percussio_sd.jpg);
 	background-repeat: no-repeat;
-	background-size: contain;
-	height: 139.3vh;
+	background-size: cover;
+	background-position: center center;
+	height: 1088px;
 	grid-row-start: 1;
-	grid-column: 1/5;
+	grid-column: 1/3;
+}
+
+.paragraf_musica{
+	grid-column: 1/2;
+	grid-row: 1/2;
+	margin-top: 10vh;
+	margin-left: 80px;
+	text-align: left;
+	align-self: center;
 }
 
 #musica{
-	grid-column: 2/4;
-	grid-row: 1/2;
+
 }
 
 #text_musica{
 	color: white;
-	grid-column: 2/3;
-	grid-row: 2/3;
+	width: 425px;
 }
 
 .foto_marc2{
-	grid-row: 2/3;
-	grid-column: 2/4;
-	align-self: end;
+	position: relative;
+	grid-row-start: 2;
+	height: 28.2vw;
+	grid-column: 1/2;
+	align-self: center;
+	margin-left: 80px;
+	margin-bottom: 15vh;
 }
 
 .foto_fons2{
 	background-color: #DB3F08;
-	height: 461px;
+	position: absolute
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
 	display: grid;
 }
 
 .foto_music{
 	background: url(img/music.png), url(img/music_ssd.jpg), url(img/music_sd.jpg);
-	background-size: cover;
-	height: 425px;
-	margin: 18px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 18px;
+	left: 18px;
+	right: 18px;
+	bottom: 18px;
 	align-self: center;	
 }
 
 /*--- Secció Origen---*/
 
 .origen{
-	height: 140vh;
+	height: 1094px;
 	background-color: black;
 	display: grid;
 	grid-template-rows: 260px auto;
@@ -432,12 +734,19 @@ h2{
 	background: url(img/ulleres.png), url(img/ulleres_sssd.jpg), url(img/ulleres_ssd.jpg), url(img/ulleres_sd.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 140vh;
+	background-position: center center;
+	height: 1094px;
 	grid-row-start: 1;
 	grid-column: 1/5;
 }
 
 #origen{
+	grid-column: 2/4;
+	grid-row: 1/2;
+	text-align: right;
+}
+
+#origen2{
 	grid-column: 2/4;
 	grid-row: 1/2;
 	text-align: right;
@@ -451,6 +760,8 @@ h2{
 	text-align: justify;
 }
 
+
+
 /*--- Secció Espai---*/
 
 .espai{
@@ -459,23 +770,96 @@ h2{
 	display: grid;
 	grid-template-rows: 30px 160px auto 30px;
 	grid-template-columns: 30px auto 450px 50px 30px;
-	
 }
 
-.fons_espai{
+/*.fons_espai{
 	background: url(img/dije.png), url(img/dije_sssd.jpg), url(img/dije_ssd.jpg), url(img/dije_sd.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: auto;
 	grid-row: 2/4;
 	grid-column: 2/5;
-	
+}*/
+
+#diapositives{
+
+	position: relative;
+	grid-row: 2/4;
+	grid-column: 2/5;
+	overflow: hidden;
 }
+
+#diapositives > div{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+.diapositiva{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+.dije{
+	background: url(img/dije.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+.dije_sopes{
+	background: url(img/dije_sopes2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 60%;
+	height: 100%;
+}
+
+.escala_9b{
+	background: url(img/escala_9b.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left 20%;
+	height: 100%;
+}
+
+.escala_sopes{
+	background: url(img/escala_sopes.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left 20%;
+	height: 100%;
+}
+
+.maces_9b{
+	background: url(img/maces_9b.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left 20%;
+	height: 100%;
+}
+
+.maces_sopes{
+	background: url(img/maces_sopes.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left 20%;
+	height: 100%;
+}
+
 
 #espai{
 	grid-column: 3/4;
 	grid-row: 2/3;
 	text-align: right;
+	z-index: 1;
 }
 
 #text_espai{
@@ -483,12 +867,20 @@ h2{
 	text-align: right;
 	grid-column: 3/4;
 	grid-row: 3/4;
+	justify-self: end;
+	z-index: 1;
+	max-width: 400px;
 }
+
+}
+
+@media only screen and (min-width: 769px) {
 
 /*--- Secció Companyia---*/
 
 .companyia{
 	height: 140vh;
+	width: 100%;
 	background-color: #F3602A;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -508,7 +900,7 @@ h2{
 
 .fons{
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	grid-row: 2/3;
 	grid-column: 1/2;
 	display: grid;
@@ -522,15 +914,14 @@ h2{
 	grid-row: 1/4;
 	background: url(img/alvarito.png), url(img/alvarito_sssd.jpg), url(img/alvarito_ssd.jpg), url(img/alvarito_sd.jpg);
 	background-size: cover;
+	background-position: center center;
 	color: white;
 	z-index: 1;
 }
 
 #alvarito_area{
-
-	height: 50vh;
 	grid-column: 1/2;
-	grid-row: 2/3;
+	grid-row: 1/4;
 	margin: 0 100px;
 	font: bold 40px futuraf, Sans-Serif;
 	color: #F3602A;
@@ -545,14 +936,15 @@ h2{
 
 .alvarito_descripcio{
 	display: none !important;
-
 	background-color: #F3602A;
 	grid-column: 2/3;
 	grid-row: 1/4;
 	padding: 0 80px;
+	padding-top: 80px;
 	display: grid;
-	grid-template-rows: auto 120px;
+	grid-template-rows: 80px auto;
 	z-index: 3;
+	/*border: 1px solid yellow;*/
 }
 
 #alvarito_area:hover + .alvarito_descripcio{
@@ -560,9 +952,9 @@ h2{
 }
 
 .alvarito_trajectoria{
-	grid-row: 1/2;
-	align-self: end;
-	margin-top: 15vh;
+	grid-row: 2/3;
+	align-self: top;
+	/*border: 1px solid blue;*/
 }
 
 .text_trajectoria{
@@ -570,7 +962,6 @@ h2{
 	font: lighter 22px futuraf, Sans-Serif;
 	text-align: justify;
 	line-height: 160%;
-
 }
 
 .mes_espai{
@@ -606,7 +997,7 @@ span{
 .marti{
 	border: 1px solid yellow;
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	grid-row: 2/3;
 	grid-column: 1/2;
 	display: grid;
@@ -619,15 +1010,14 @@ span{
 	grid-row: 1/4;
 	background: url(img/marti.png), url(img/marti_sssd.jpg), url(img/marti_ssd.jpg), url(img/marti_sd.jpg);
 	background-size: cover;
+	background-position: center center;
 	color: white;
 	z-index: 1;
 }
 
 #marti_area{
-
-	height: 50vh;
 	grid-column: 2/3;
-	grid-row: 2/3;
+	grid-row: 1/4;
 	font: bold 40px futuraf, Sans-Serif;
 	color: #F3602A;
 	text-align: center;
@@ -642,51 +1032,100 @@ span{
 
 .marti_descripcio{
 	display: none !important;
-
 	background-color: #F3602A;
 	grid-column: 1/2;
 	grid-row: 1/4;
 	padding: 0 80px;
+	padding-top: 80px;
 	display: grid;
-	grid-template-rows: auto 120px;
+	grid-template-rows: 80px auto;
 	z-index: 3;
+	/*border: 1px solid yellow;*/
 }
 
 .marti_trajectoria{
 
-	grid-row: 1/2;
-	align-self: end;
-	margin-top: 15vh;
+	grid-row: 2/3;
+	align-self: top;
+	/*border: 1px solid blue;*/
 }
 
 #marti_area:hover + .marti_descripcio{
 	display: block !important;
 }
 
+}
+
+/*
+---------------------------------------------------------------------
+					REPETICIÓ
+*/	
+
+@media only screen and (min-width: 769px) {
+
+/*--- Secció Companyia---*/
+
+.companyia_touch{
+	height: 240vh;
+	width: 100%;
+	grid-template-rows: 40fr 200fr;
+}
+		/*--- Apartat Alvarito ---*/
+
+.fons_touch{
+	height: 200vh;
+	grid-template-rows: repeat(2,1fr 2fr 1fr);
+}
+
+.alvarito_descripcio_touch{
+	display: block !important;
+	grid-column: 2/3;
+	grid-row: 1/4;
+}
+
+		/*--- Apartat Martí ---*/
+
+.marti_foto_touch{
+	grid-column: 2/3;
+	grid-row: 4/7;
+}
+
+.marti_descripcio_touch{
+	display: block !important;
+	grid-column: 1/2;
+	grid-row: 4/7;
+}
+
+}
+
+/*------------------------------------------------------------*/
 /*--- Secció Agenda---*/
 
+#seccio-agenda{
+}
+
 .agenda{
-	border: 1px solid blue
 	color: #F3602A;
-	height: 70vh;
+	height: auto;
 	background-color: black;
-	display: grid;
-	grid-template-rows: 100px 250px auto 200px ;
-	grid-template-columns: 160px 1fr 1fr 160px;
 }
 
 .agenda_titol{
-	color: #DB3F08;
 	text-align: center;
-	grid-column: 2/4;
-	grid-row: 2/4;
+	height: 40vh;
+	margin: auto;
+	display: grid;
+
 }
 
-#prox{
+.vermell{
+	color: #DB3F08;
+	align-self: center;
+}
+
+.prox{
 	color: #F3602A;
-	width: 100vw;
-	align-self: end;
-	grid-row: 2/3;
+	width: auto;
 	font: italic lighter 50px futuraf, sans-serif;
 	text-align: center;
 }
@@ -697,42 +1136,64 @@ td{
 	text-align: center;
 	padding: 0;
 	font: normal lighter 22px futuraf, sans-serif;
+	width: 25vw;
+
 }
 
 table{
-	grid-column: 2/4;
-	height: 200px;
+	height: 25vh;
+	width: 80%;
+	margin: auto;
 	align-self: end;
-	grid-row-end: 4;
 	border-collapse: collapse;
 	table-layout: fixed;
-	margin: 0;
 	padding: 0;
+}
 
+.situador_taula{
+	height: 40vh;
+	display: grid;
 }
 
 /*--- Secció Contacte---*/
 
-#seccio_contacte{
-	height: 100vh;
-
-	z-index: 5;
-}
-
 .contacte{
 	background-color: black;
-	height: 110vh;
+	height: 100vh;
 	display: grid;
-	grid-template-rows: auto 600px;
+	grid-template-rows: auto 77vh;
+	grid-template-columns: 100%;
+
 }
 
 .fons_contacte{
-	height: 600px;
+	height: 77vh;
 	background: url(img/peus.png), url(img/peus_sssd.jpg), url(img/peus_ssd.jpg), url(img/peus_sd.jpg);
 	background-size: cover;
+	grid-row: 2/3;
+	grid-column: 1/2;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
+}
+
+.marge_contacte{
+	
+	grid-column: 1/2;
+	grid-row: 1/3;
+	transition: border 0.3s linear;
+	
+	z-index: 3;
+	background: transparent;
+	
+	border: 18px solid #F3602A;
+}
+
+.marge_contacte-invisible{
+	
+	transition: border 0.3s linear;
+	border-width: 0px;
+
 }
 
 .contacte_titol{
@@ -750,28 +1211,1146 @@ h6{
 	align-self: center;
 	grid-column: 2/3;
 	grid-row: 1/2;
+	border-width: 0;
 }
 
-/*--- Fonts---*/
+}
 
-@font-face {
-          font-family: "futuraf";
-          font-weight: lighter;
-          font-style: normal;
-          src: url('font/futura-light.otf') format('opentype');
-        }
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
 
-@font-face {
-          font-family: "futuraf";
-          font-weight: bold;
-          font-style: normal;
-          src: url('font/futura-bold.otf') format('opentype');
-        }
+@media only screen and (max-width: 1290px), (max-width: 1200px) and (orientation: portrait)  {
 
-@font-face {
-          font-family: "futuram";
-          font-weight: normal;
-          font-style: normal;
-          src: url('font/futura-medium.otf') format('opentype');
-        }
+.text_trajectoria{
+	font: lighter 21px futuraf, Sans-Serif;
+
+}
+
+span{
+	font: normal 21px futuram, Sans-Serif;
+}
+
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1200px), (max-width: 1200px) and (orientation: portrait)  {
+
+.text{
+	font: lighter 20px futuraf, Sans-Serif;
+	line-height: 130%;
+}
+
+li{
+	font: lighter 24px futuraf, Sans-Serif;
+}
+
+.header{
+	grid-template-rows: 85px 60px 190px auto;
+}
+
+.header--narrow{
+	grid-template-rows: 55px 60px 190px auto;
+}
+
+h4{
+	line-height: 92%;
+}
+
+.header--wide{
+	grid-template-rows: 14vh 60px 190px auto;
+}
+
+#origen{
+	grid-column: 1/3;
+	padding-left: 180px;
+	mix-blend-mode: difference;
+}
+
+#origen2{
+	grid-column: 1/3;
+	padding-left: 180px;
+	mix-blend-mode: normal;
+	opacity: 0.8;
+
+}
+
+#text_origen{
+	padding-top: 8vh;
+}
+
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1080px), (max-width: 1200px) and (orientation: portrait)  {
+
+h1{
+	font: lighter 21vw futuraf, Sans-Serif;
+	letter-spacing: 0px;
+	margin: 0;
+}
+
+.title{
+    grid-row: 4/5;
+    align-self: center;
+    grid-column: 1/4;
+    margin: auto;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1020px), (max-width: 1200px) and (orientation: portrait) {
+
+.fons_espectacle{
+	background: url(img/escala_sssssd.png), url(img/escala_ssssd.jpg), url(img/escala_sssd.jpg), url(img/escala_ssd.jpg), url(img/escala_sd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	grid-row: 1/3;
+	grid-column: 1/4;
+}
+
+.fons_sobre{
+	background: url(img/escala_sssssd_sobre.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	grid-row: 1/3;
+	grid-column: 1/4;
+}
+
+li{
+	display: none;
+}
+
+.text_trajectoria{
+	font: lighter 20px futuraf, Sans-Serif;
+}
+
+td{
+	font: normal lighter 20px futuraf, sans-serif;
+}
+
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 930px), (max-width: 1200px) and (orientation: portrait) {
+
+.text{
+	font: lighter 18px futuraf, Sans-Serif;
+	line-height: 130%;
+}
+
+.alvarito_descripcio{
+	/*display: none !important;*/	
+	padding: 0 30px;
+	padding-top: 80px;
+}
+
+.marti_descripcio{
+	/*display: none !important;*/
+	padding: 0 30px;
+	padding-top: 80px;
+
+}
+
+.text_trajectoria{
+	font: lighter 18px futuraf, Sans-Serif;
+}
+
+td{
+	font: normal lighter 18px futuraf, sans-serif;
+}
+
+
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 888px), (max-width: 1200px) and (orientation: portrait) {
+
+.idea{
+	grid-template-columns: 1fr 1fr;
+}
+
+.textura{
+	grid-column: 1/3;
+}
+
+#idea{
+	grid-column: 1/2;
+	padding-left: 80px;
+}
+
+#text_idea{
+	grid-column: 1/2;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+.foto_berlin{
+	margin-right: 30px;
+}
+
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px), (max-width: 1200px) and (orientation: portrait) {
+
+h1{
+	font: lighter 21vw futuraf, Sans-Serif;
+	letter-spacing: 0px;
+	color: white;
+	padding-top: 3vh;
+	background-color: #F3602A;
+	opacity: 0.75;
+}
+
+.opacitat{
+	background-color: transparent;
+	opacity: 1;
+}
+
+.fons_inici{
+	background: url(img/aro.png), url(img/aro_ssd.jpg), url(img/aro_sd.jpg);
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 81% center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	height: 100vh;
+	grid-column:1/4;
+	grid-row: 1/5;
+	z-index: 1;
+}
+
+.inici{
+	height: 100vh;
+	background-color: black;
+	color: white;
+	display: grid;
+	grid-template-rows: 70px 60px 190px auto;
+	grid-template-columns: 10vw auto 10vw;
+}
+
+.header{
+	width: 100%;
+	height: 130px;
+	display: grid;
+	grid-template-rows: 76px 60px 190px auto;
+	grid-template-columns: 80px auto 80px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 4;
+}
+
+.header--narrow{
+	background-color: black;
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 4;
+	display: grid;
+	grid-template-rows: 48px 60px 190px auto;
+	grid-template-columns: 80px auto 80px;
+}
+
+.header--wide{
+	background-color: transparent;
+	width: 100%;
+	height: 180px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 4;
+	display: grid;
+	grid-template-rows: 100px 60px 190px auto;
+	grid-template-columns: 80px auto 80px;
+}
+
+/*--- Secció Vídeo---*/
+
+.video{
+	height: auto;
+	grid-template-rows: 27vh auto 2fr;
+}
+
+
+/*--- Secció Dossier---*/
+
+/*.dossier{
+	height: 60vh;
+	background-color: black;
+	text-align: center;
+	display: grid;
+	z-index: 4;
+}*/
+
+.fitxa_fons{
+	grid-row: 3/4;
+	width: 100%;
+	height: 20vh;
+	display: grid;
+	z-index: 3;
+}
+
+#fitxa_boto{
+	display: inline-block;
+	width: 300px;
+	margin: auto;	
+}
+
+/*.textura_video{
+	height: 100vh;
+	background: url(img/textura@3x.png);
+	background-size: contain;
+	mix-blend-mode: multiply;
+}*/
+
+
+
+#fitxa_text{
+	text-align: center;
+	color: black;
+	font: lighter 26px futuraf, Sans-Serif;
+	
+}
+
+#fitxa_text:hover{
+	margin-top: 6px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid black;
+	
+}
+
+/*---Secció Espectacle---*/
+
+.espectacle{
+	height: auto;
+	grid-template-rows: 140px 170px 600px;
+	grid-template-columns: 10vw auto 10vw;	
+}
+
+.fons_espectacle{
+	height: auto;
+	grid-row: 3/4;
+	grid-column: 1/4;
+	width: 100vw;
+	background-position: 20% bottom;
+	background-size: cover;
+}
+
+.fons_sobre{
+	height: auto;
+	grid-row: 3/4;
+	grid-column: 1/4;
+	width: 100vw;
+	background-position: 20% bottom;
+	background-size: cover;
+}
+
+.espectacle_titol{
+	grid-column: 2/3;
+	grid-row: 1/2;
+	grid-template-columns: 1fr;
+}
+
+h2{
+	font: bold 15vw futuraf, Sans-Serif;
+	color: #F3602A;
+	line-height: 87%;
+}
+
+.espectacle_titol_posicio{
+	grid-column: 1/2;
+
+}
+
+#text_espectacle{
+	margin-top: 0;
+}
+/*--- Secció Video---*/
+
+iframe{
+	margin: auto;
+	height: 45vw;
+	width: 80vw;
+	border: none;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4), 0 6px 10px 0 rgba(0, 0, 0, 0.1);  
+	transition: box-shadow 0.4s ease-in-out;
+	/*padding: 18px;
+	border: 2px solid #DB3F08;*/
+	z-index: 1;
+}
+
+/*--- Secció Idea---*/
+
+.idea{
+	height: auto;
+	background-color: #F3602A;
+	display: grid;
+	grid-template-columns: 10vw auto 10vw;
+}
+
+.textura{
+	grid-column: 1/4;
+	grid-row: 1/5;
+	background: url(img/textura@3x.png);
+	background-size: contain;
+	mix-blend-mode: multiply;
+}
+
+#idea{
+	grid-column: 2/3;
+	padding-top: 80px;
+	padding-left: 0;
+	text-align: right;
+}
+
+.titol{
+	align-self: end;
+	font: 60px Baskerville, Serif;
+	color: #DB3F08;
+	line-height: 0%;
+}
+
+
+#text_idea{
+	grid-column: 2/3;
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 30px;
+	text-align: right;
+}
+
+.foto_berlin{
+	grid-column: 2/3;
+	position: relative;
+	float: right;
+	min-width: 265px;
+	height: 500px;
+	justify-self: right;
+	background: url(img/equilibri_berlin.png), url(img/equilibri_berlin_ssd.jpg), url(img/equilibri_berlin_sd.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 0;
+	margin-left: 0;
+	margin: 30px 0 0 0;
+}
+
+
+/*--- Secció Tècnica ---*/
+
+.tecnica{
+	height: auto;
+	background-color: black;
+	display: grid;
+	grid-template-columns: 10vw auto 10vw;
+
+}
+
+
+
+.paragraf_tecnica{
+	grid-column: 2/3;
+	margin-top: 80px;
+	margin-right: 80px;
+	text-align: right;
+	align-self: center;
+}
+
+
+#tecnica{
+	text-align: left;
+
+}
+
+#text_tecnica{
+	margin-top: 30px;
+	color: white;
+	text-align: left;
+	max-width: 425px;
+}
+
+.fons_tecnica{
+	background: url(img/equilibri_nena_ssssd.png), url(img/equilibri_nena_sssd.jpg), url(img/equilibri_nena_ssd.jpg), url(img/equilibri_nena_sd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -50px center;
+	height: 800px;
+	grid-column: 1/4;
+	width: 100vw;
+
+
+}
+
+.foto_marc{
+	position: relative;
+	height: 600px;
+	width: 100vw;
+	grid-column: 1/4;
+	margin-top: 30px;
+	margin-right: 0;
+	margin-bottom: 30px;
+	align-self: center;
+}
+
+.foto_fons{
+	background-color: #DB3F08;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-width: 466px;
+	margin: auto;
+	height: 100%;
+	display: grid;
+}
+
+.foto_pals{
+	background:url(img/pals1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	top: 18px;
+	left: 18px;
+	right: 18px;
+	bottom: 18px;
+	align-self: center;	
+}
+
+/*--- Secció Interacció ---*/
+
+.interaccio{
+	height: 600px;
+	background-color: black;
+	display: grid;
+	grid-template-rows: 1px auto;
+	grid-template-columns: 40% auto 10vw;
+}
+
+.fons_interaccio{
+	background: url(img/tub.png), url(img/tub_sssd.jpg), url(img/tub_ssd.jpg), url(img/tub_sd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -100px center;
+	height: 600px;
+	grid-column: 1/4;
+}
+
+#text_interaccio{
+	color: white;
+	justify-self: end;
+	grid-column: 2/3;
+	grid-row: 2/3;
+	text-align: right;
+}
+
+/*--Secció Música--*/
+
+.musica{
+	height: auto;
+	background-color: black;
+	display: grid;
+	grid-template-columns: 10vw auto 10vw;
+
+}
+
+.paragraf_musica{
+	grid-column: 2/3;
+	margin-top: 80px;
+	text-align: right;
+	align-self: center;
+	display: grid;
+}
+
+#musica{
+
+}
+
+#text_musica{
+	margin-top: 30px;
+	color: white;
+	max-width: 425px;
+	justify-self: right;
+
+}
+
+.fons_musica{
+	background: url(img/pals_percussio.png), url(img/pals_percussio_sssd.jpg), url(img/pals_percussio_ssd.jpg), url(img/pals_percussio_sd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% center;
+	height: 700px;
+	width: 100vw;
+	grid-column: 1/4;
+}
+
+.foto_marc2{
+	position: relative;
+	height: 600px;
+	width: 100vw;
+	grid-column: 1/4;
+	align-self: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-right: 0;
+}
+
+.foto_fons2{
+	background-color: #DB3F08;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-width: 466px;
+	margin: auto;
+	height: 100%;
+	display: grid;
+}
+
+.foto_music{
+	background: url(img/music.png), url(img/music_ssd.jpg), url(img/music_sd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	top: 18px;
+	left: 18px;
+	right: 18px;
+	bottom: 18px;
+	align-self: center;	
+}
+
+/*--- Secció Origen---*/
+
+.origen{
+	height: 1090px;
+	background-color: black;
+	display: grid;
+	grid-template-rows: 180px 100px auto;
+	grid-template-columns: 10vw auto 10vw;
+}
+
+.fons_origen{
+	background: url(img/ulleres.png), url(img/ulleres_sssd.jpg), url(img/ulleres_ssd.jpg), url(img/ulleres_sd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -250px;
+	height: 1090px;
+	width: 100%;
+	grid-column: 1/4;
+	grid-row: 1/4;
+}
+
+#origen{
+	max-width: 320px;
+	padding: 0;
+
+	mix-blend-mode: difference;
+	grid-row: 1/2;
+	grid-column: 2/3;
+
+}
+
+#origen2{
+	max-width: 320px;
+	padding: 0;
+
+
+	mix-blend-mode: normal;
+	opacity: 0.8;
+	grid-row: 1/2;
+	grid-column: 2/3;
+
+}
+
+#text_origen{
+	color: white;
+	grid-column: 2/3;
+	grid-row: 2/3;
+ 	max-width: 320px;
+	text-align: justify;
+	padding-top: 8vh;
+}
+
+/*--- Secció Espai---*/
+
+.espai{
+	height: auto;
+	background-color: black;
+}
+
+/*.fons_espai{
+	background: url(img/dije.png), url(img/dije_sssd.jpg), url(img/dije_ssd.jpg), url(img/dije_sd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
+	grid-row: 2/4;
+	grid-column: 2/5;
+}*/
+
+#diapositives{
+	position: relative;
+	height: 500px;
+	width: 100%;
+	overflow: hidden;
+	grid-column: 1/3;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+}
+
+#diapositives > div{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.diapositiva{
+	position: absolute;
+	left: 10vw;
+	top: 0;
+	width: 80%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.diapo{
+	background-repeat: no-repeat;
+	
+	margin-left: 30px;
+	margin-right: 30px;
+	height: 500px;
+}
+
+.dije{
+	background: url(img/dije.png);
+	background-position: 25% center;
+	background-size: cover;
+}
+
+.dije_sopes{
+	background: url(img/dije_sopes2.png);
+	background-position: 25% center;
+	background-size: cover;
+}
+
+.escala_9b{
+	background: url(img/escala_9b.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left 20%;
+	height: 100%;
+}
+
+.escala_sopes{
+	background: url(img/escala_sopes.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left 20%;
+	height: 100%;
+}
+
+.maces_9b{
+	background: url(img/maces_9b.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100%;
+}
+
+.maces_sopes{
+	background: url(img/maces_sopes.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100%;
+}
+
+
+
+#espai{
+	padding-top: 70px;
+	text-align: right;
+	padding-right: 10vw;
+	z-index: 1;
+
+}
+
+#text_espai{
+	color: white;
+	text-align: right;
+	padding-top: 70px;
+	padding-right: 10vw;
+	padding-left: 10vw;
+	margin-left: auto;
+	max-width: 320px;
+	z-index: 1;
+}
+
+
+/*--- Secció Companyia---*/
+
+.companyia{
+	height: auto;
+	background-color: #F3602A;
+	display: grid;
+
+}
+
+.companyia_titol{
+	height: 200px;
+	text-align: center;
+	display: grid;
+}
+
+#negre{
+	align-self: center;
+	color: black;
+}
+
+
+		/*--- Apartat Alvarito ---*/
+
+.fons{
+	height: auto;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 600px auto 600px auto;
+}
+
+.alvarito_foto{
+	grid-column: 1/2;
+	grid-row: 1/2;
+	width: 100%;
+	height: 600px;
+	background: url(img/alvarito.png), url(img/alvarito_sssd.jpg), url(img/alvarito_ssd.jpg), url(img/alvarito_sd.jpg);
+	background-size: cover;
+	background-position: center 0;
+	color: white;
+	z-index: 1;
+
+}
+
+#alvarito_area{
+	width: 100%;
+	grid-column: 1/2;
+	grid-row: 1/2;
+	width: 100%;
+	font: bold 40px futuraf, Sans-Serif;
+	color: #F3602A;
+	text-align: center;
+	z-index: 2;
+	display: grid;
+}
+
+.alvarito_titol{
+	align-self: center;
+}
+
+.alvarito_descripcio{
+	/*display: none !important;*/
+
+	background-color: #F3602A;
+	width: 100%;
+	box-sizing: border-box;
+	grid-column: 1/2;
+	grid-row: 2/3;
+	padding: 0 10vw;
+	padding-top: 0;
+	display: grid;
+	grid-template-rows: 10vw auto 10vw;
+	z-index: 3;
+
+}
+
+.alvarito_trajectoria{
+	grid-row: 2/3;
+	align-self: top;
+
+}
+
+.text_trajectoria{
+	color: black;
+	font: lighter 18px futuraf, Sans-Serif;
+	text-align: justify;
+	line-height: 160%;
+}
+
+.mes_espai{
+	color: black;
+	font: lighter 22px futuraf, Sans-Serif;
+	line-height: 210%;
+}
+
+.menys_espai{
+	color: black;
+	font: lighter 22px futuraf, Sans-Serif;
+	line-height: 140%;
+}
+
+span{
+	color: black;
+	font: normal 22px futuram, Sans-Serif;
+}
+
+#salt_espai{
+	line-height: 80%;
+}
+
+#marti_area:link, #marti_area:visited, #marti_area:hover, #marti_area:active, 
+#alvarito_area:link, #alvarito_area:visited, #alvarito_area:hover, #alvarito_area:active{
+	color: #F3602A;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+		/*--- Apartat Martí ---*/
+
+
+.marti_foto{
+	grid-column: 1/3;
+	grid-row: 3/4;
+	width: 100%;
+	background: url(img/marti.png), url(img/marti_sssd.jpg), url(img/marti_ssd.jpg), url(img/marti_sd.jpg);
+	background-size: cover;
+	background-position: center 30%;
+	color: white;
+	z-index: 1;
+}
+
+#marti_area{
+	grid-column: 1/3;
+	grid-row: 3/4;
+	font: bold 40px futuraf, Sans-Serif;
+	color: #F3602A;
+	text-align: center;
+	width: 100%;
+	z-index: 2;
+	display: grid;
+
+}
+
+.marti_titol{
+	align-self: center;
+}
+
+.marti_descripcio{
+	/*display: none !important;*/
+
+	background-color: #F3602A;
+	grid-column: 1/3;
+	grid-row: 4/5;
+	width: 100%;
+	box-sizing: border-box;;
+	padding: 0 10vw;
+	padding-top: 0;
+	display: grid;
+	grid-template-rows: 10vw auto 10vw;
+	z-index: 3;
+
+}
+
+.marti_trajectoria{
+
+	grid-row: 2/3;
+	align-self: top;
+
+}
+
+/*---Secció Agenda---*/
+
+#seccio-agenda{
+}
+
+.agenda{
+	color: #F3602A;
+	height: auto;
+	background-color: black;
+	display: grid;
+}
+
+.agenda_titol{
+	text-align: center;
+	height: 40vh;
+	width: 100%;
+	display: grid;
+
+}
+
+.vermell{
+	color: #DB3F08;
+	align-self: center;
+}
+
+#prox{
+	color: #F3602A;
+	width: 100%;
+	grid-column: 1/5;
+	font: italic lighter 34px futuraf, sans-serif;
+	text-align: center;
+
+}
+
+td{
+	color: white;
+	border-bottom: 1px solid #F3602A;
+	text-align: center;
+	padding: 0;
+	font: normal lighter 22px futuraf, sans-serif;
+	width: 25vw;
+
+}
+
+table{
+	height: 25vh;
+	width: 80vw;
+	margin: auto;
+	align-self: end;
+	border-collapse: collapse;
+	table-layout: fixed;
+	padding: 0;
+}
+
+.situador_taula{
+	height: 40vh;
+	display: grid;
+}
+
+/*--- Secció Contacte---*/
+
+.contacte{
+	background-color: black;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: auto 77vh;
+	grid-template-columns: 100%;
+
+}
+
+.fons_contacte{
+	height: 77vh;
+	background: url(img/peus.png), url(img/peus_sssd.jpg), url(img/peus_ssd.jpg), url(img/peus_sd.jpg);
+	background-size: cover;
+	background-position: 10% center;
+	grid-row: 2/3;
+	grid-column: 1/2;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	border: 1px solid blue;
+}
+
+.marge_contacte{
+	
+	grid-column: 1/2;
+	grid-row: 1/3;
+	transition: border 0.3s linear;
+	
+	z-index: 3;
+	background: transparent;
+	
+		border: 18px solid #F3602A;
+}
+
+.marge_contacte-invisible{
+	
+	transition: border 0.3s linear;
+	border-width: 0px;
+
+}
+
+.contacte_titol{
+	color: #DB3F08;
+	font: bold 11vw futuraf, Sans-Serif;
+}
+
+h6{
+	font: lighter 28px futuraf, Sans-Serif;
+}
+
+.text_contacte{
+	color: white;
+	text-align: center;
+	align-self: center;
+	grid-column: 1/3;
+	grid-row: 1/2;
+	border-width: 0;
+}
+
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 490px) {
+
+.fons_musica{
+	background: url(img/pals_percussio.png), url(img/pals_percussio_sssd.jpg), url(img/pals_percussio_ssd.jpg), url(img/pals_percussio_sd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 85% center;
+	height: 700px;
+	width: 100vw;
+	grid-column: 1/4;
+}
+
+.interaccio{
+	height: 600px;
+	background-color: black;
+	display: grid;
+	grid-template-rows: 340px auto;
+	grid-template-columns: 10vw auto 10vw;
+}
+
+.fons_interaccio{
+	background: url(img/tub.png), url(img/tub_sssd.jpg), url(img/tub_ssd.jpg), url(img/tub_sd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -100px center;
+	height: 600px;
+	grid-column: 1/4;
+}
+
+#text_interaccio{
+	color: white;
+	justify-self: end;
+	max-width: 230px;
+	grid-column: 2/3;
+	grid-row: 2/3;
+	text-align: right;
+}
+
+
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
 

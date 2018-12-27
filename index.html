@@ -7,47 +7,78 @@
 	content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible"
 	content="ie=edge">
+	<!-- script per google analytics-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124626266-1"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+ 		gtag('config', 'UA-124626266-1');
+	</script>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="loading-bar.css">
 	<title>Alvarito i Cia - SOMNIS</title>
 	<script src="jquery-3.3.1.min.js"></script>
+	<script src="svg.min.js"></script>
+	
 </head>
 
 <body>
+		<div id="wrapperdos">
+			<div class="retol">
+				<h3 class="carregant carregant_invisible">CARREGANT</h3>
+			</div>
+		</div>
 	<div class="wrapper">
-		<section id="seccio-inici" data-anchor="seccio-inici">
+		<section class="page-section" id="seccio-inici" data-anchor="seccio-inici">
 			<div class="inici">
 				<div class="fons_inici"></div>
+				<div class="marc_inici">
+					<div class="marc"></div>
+				</div>
 				<header class="header">
 					<div class="logo"><h4>Alvarito i Cia</h4></div>
-					<nav class="nav">
+					<nav class="navigation nav">
 						<ul>
-							<li class="invisible"><a href="#" data-scroll="seccio_inici">inici</a></li>
-							<li><a href="#" data-scroll="seccio_media">media</a></li>	
-							<li><a href="#" data-scroll="seccio_espectacle">espectacle</a></li>
-							<li><a href="#" data-scroll="seccio_companyia">companyia</a></li>
-							<li><a href="#" data-scroll="seccio_agenda">agenda</a></li>
-							<li class="ultim"><a href="#" data-scroll="seccio_contacte">contacte</a></li>
+							<li class="invisible"><a href="#" data-scroll="seccio-inici">inici</a></li>
+							<li><a href="#" data-scroll="seccio-media">media</a></li>	
+							<li><a href="#" data-scroll="seccio-espectacle">espectacle</a></li>
+							<li><a href="#" data-scroll="seccio-companyia">companyia</a></li>
+							<li><a href="#" data-scroll="seccio-agenda">agenda</a></li>
+							<li id="ultim"><a href="#" data-scroll="seccio-contacte">contacte</a></li>
 						</ul>	
 					</nav>
 				</header>	
 				<!--<div class="idioma">CAT</div>-->
-				<div class="title"><h1>SOMNIS</h1></div>		
+				<div class="title"><h1>SOMNIS</h1></div>
+				<div class="title"><h1 class="opacitat">SOMNIS</h1></div>		
 			</div>
 		</section>
-		<section id="seccio_media" data-anchor="seccio_media">
+		<section class="page-section" id="seccio-media" data-anchor="seccio-media">
 			<div class="video">
-				<iframe src="https://www.youtube.com/embed/ihxIh2ThH9c" allowfullscreen></iframe>
-			</div>
-			<div class="dossier">
-				<div class="fitxa_fons"><a href="SOMNIS fitxa tecnica.pdf" download id="fitxa_boto"><h3 id="fitxa_text">Descarregar Fitxa Tècnica</h3></a></div>
+				<div class="vinyeta"></div>
+				<div class="degradat"></div>
+					<div class="media_titol">
+						<h2 id="negre" class="centrat_titol">MEDIA</h2>
+					</div>
+					<div class="situador">
+						<iframe src="https://www.youtube.com/embed/ihxIh2ThH9c" allowfullscreen></iframe>
+					</div>
+			
+			<!--<div class="dossier">-->
+					<div class="fitxa_fons">
+						<a href="fitxa_tecnica_SOMNIS_AlvaritoiCia_CAT.pdf" download id="fitxa_boto"><h3 id="fitxa_text">Descarregar Fitxa Tècnica</h3></a>
+					</div>
+			<!--</div>-->
 			</div>
 		</section>
-		</section>
-		<section id="seccio_espectacle" data-anchor="seccio_espectacle">
+		<section class="page-section" id="seccio-espectacle" data-anchor="seccio-espectacle">
 			<div class="espectacle">
-				<div class="espectacle_titol"><h2>ESPECTACLE</h2></div>
+
+				<div class="espectacle_titol"><h2 class="espectacle_titol_posicio">ESPECTACLE</h2></div>
 				<div class="fons_espectacle"></div>
-				<div class="text" id="text_espectacle">
+				<div class="fons_sobre"></div>
+				<div class="text hideme"  id="text_espectacle">
 					<p>
 					“Com més allunyeu el vostre esperit dels seus somnis, menys els coneixerà; sereu subjecte de mil aparences perquè no n’haureu comprès la seva naturalesa. Si una mica de somni és perillós, el que en guareix, no és pas menys somni, sinó més somni, però el somni sencer. És important conèixer completament els nostres somnis per no patir-los.”
 					<br>
@@ -56,8 +87,9 @@
 				</div>	
 			</div>
 			<div class="idea">
-				<div class="titol" id="idea"><h3>Idea</h3></div>
-				<div class="text" id="text_idea">
+				<!--<div class="textura"></div>-->
+				<div class="titol hideme" id="idea"><h3>Idea</h3></div>
+				<div class="text hideme" id="text_idea">
 					<p>SOMNIS ens apropa a l’experiència tan quotidiana i alhora misteriosa de somiar. De vegades la sensació de descontrol i d’imprevisibilitat ho envaeixen tot. D’altres, som els amos i podem fer qualsevol cosa que imaginem. Però potser el més important en els somnis és que ens apropen a pors, desitjos i situacions desconegudes.  Aquesta escenificació dels somnis d’un malabarista ens mostra un món divers on les diferències són benvingudes i ens fa adonar amb un toc d’humor que la cooperació és el millor camí per evitar tenir un malson.
 					</p>
 				</div>
@@ -65,35 +97,40 @@
 				</div>
 			</div>
 			<div class="tecnica">
-				<div class="fons_tecnica"></div>
-				<div class="titol" id="tecnica"><h3>Tècnica</h3></div>
-				<div class="text" id="text_tecnica">
-					<p>Aquest és un espectacle que combina una gran varietat de tècniques de circ al ritme de la música en directe. Hi ha malabars de molts tipus i equilibris amb els objectes més impensables. Doneu una palanca i un punt de suport a l’Alvarito i us posarà el món en equilibri.
-					</p>
+				<div class="paragraf_tecnica">
+					<div class="titol hideme" id="tecnica"><h3>Tècnica</h3></div>
+					<div class="text hideme" id="text_tecnica">
+						<p>Aquest és un espectacle que combina una gran varietat de tècniques de circ al ritme de la música en directe. Hi ha malabars de molts tipus i equilibris amb els objectes més impensables. Doneu una palanca i un punt de suport a l’Alvarito i us posarà el món en equilibri.
+						</p>
+					</div>
 				</div>
-				<div class="foto_marc">
+				<div class="fons_tecnica"></div>
+				<div class="foto_marc hideme">
 					<div class="foto_fons">
 						<div class="foto_pals">
 						</div>
 					</div>
 				</div>
 			</div>
+		
 			<div class="interaccio">
 				<div class="fons_interaccio"></div>
-				<div class="text" id="text_interaccio">
+				<div class="text hideme" id="text_interaccio">
 					<p>
 					Però als somnis els malabaristes poden ser músics i els músics poden entrar a escena. Diverses interaccions entre els personatges donen dinamisme a l’acció i trenquen amb els rols tradicionals del l’artista en solitari i el músic acompanyant.
 					</p>
 				</div>
 			</div>
 			<div class="musica">
-				<div class="fons_musica"></div>
-				<div class="titol" id="musica"><h3>Música</h3></div>
-				<div class="text" id="text_musica">
-					<p>I en tot moment la música en directe genera una atmosfera de sons pianístics, sintetitzats, percussius, samplejats i loopejats que acompanyen en total sincronia les destreses circences. Tradició i innovació conviuen en una proposta d’espectacle ben contemporània.
-					</p>
+				<div class="paragraf_musica">
+					<div class="titol hideme" id="musica"><h3>Música</h3></div>
+					<div class="text hideme" id="text_musica">
+						<p>I en tot moment la música en directe genera una atmosfera de sons pianístics, sintetitzats, percussius, samplejats i loopejats que acompanyen en total sincronia les destreses circences. Tradició i innovació conviuen en una proposta d’espectacle ben contemporània.
+						</p>
+					</div>
 				</div>
-				<div class="foto_marc2">
+				<div class="fons_musica"></div>
+				<div class="foto_marc2 hideme">
 					<div class="foto_fons2">
 						<div class="foto_music">
 						</div>
@@ -102,22 +139,43 @@
 			</div>
 			<div class="origen">
 				<div class="fons_origen"></div>
-				<div class="titol" id="origen"><h3>Origen</h3></div>
-				<div class="text" id="text_origen">
+				<div class="titol hideme" id="origen"><h3>Origen</h3></div>
+				<div class="titol hideme" id="origen2"><h3>Origen</h3></div>
+				<div class="text hideme" id="text_origen">
 					<p>SOMNIS és una obra sorgida del somni de l’Alvarito al llarg de tota la seva trajectòria en el circ de fer un espectacle en solitari. Ha recuperat un grapat d’idees que havia hagut d’arraconar durant els anys perquè el moment no els era propici i les ha  adaptat a la temàtica onírica. Aquí en teniu el resultat.
 					</p>
 				</div>
 			</div>
 			<div class="espai">
-				<div class="fons_espai"></div>
-				<div class="titol" id="espai"><h3>Espai</h3></div>
-				<div class="text" id="text_espai">
+				<div class="titol hideme" id="espai"><h3>Espai</h3></div>
+				<div class="text hideme" id="text_espai">
 					<p>L’espectacle ha demostrat la seva versatilitat per lluir tant en sales de teatre, en què el joc de llums submergeix en la fantasia, com al carrer, on l’actitud desenfadada dels números i l’acompanyament musical saben captar l’atenció del públic.
 					</p>
 				</div>
+				<div id="diapositives" class="fons_espai">
+					<div class="diapositiva">
+						<div class="diapo dije"></div>
+					</div>
+					<div class="diapositiva">
+						<div class="diapo dije_sopes"></div>
+					</div>
+					<div class="diapositiva">
+						<div class="diapo escala_9b"></div>
+					</div>
+					<div class="diapositiva">
+						<div class="diapo escala_sopes"></div>
+					</div>
+					<div class="diapositiva">
+						<div class="diapo maces_9b"></div>
+					</div>
+					<div class="diapositiva">
+						<div class="diapo maces_sopes"></div>
+					</div>
+				</div>
+				
 			</div>
 		</section>
-		<section id="seccio_companyia" data-anchor="seccio_companyia">	
+		<section class="page-section" id="seccio-companyia" data-anchor="seccio-companyia">	
 			<div class="companyia">
 				<div class="companyia_titol"><h2 id="negre">COMPANYIA</h2></div>
 				<div class="fons">
@@ -141,8 +199,6 @@
 							<p class="text_trajectoria"><span>2015 &ndash; 2017</span> &ensp; Ambizurdos<br></p>
 							<p id="salt_espai"><br></p>
 							<p class="text_trajectoria"><span>2017 &ndash; 2018</span> &ensp; Alvarito i Cia</p>
-
-							
 						</div>
 					</div>
 				
@@ -162,17 +218,17 @@
 							<p class="text_trajectoria"><span>2013 &ndash; 2018 </span> &ensp; Membre de la banda brasilera de <i>Xandele</i>, amb concerts a sales com <i>Apolo</i> o <i>Sinestesia</i>.</p> <br>
 							<p class="text_trajectoria"><span>2017 &ndash; 2018</span> &ensp; Membre de la companyia <i>Alvarito i Cia</i>.
 							</p>
-						</p>
 						</div>	
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="seccio_agenda" data-anchor="seccio_agenda">
+		<section class="page-section" id="seccio-agenda" data-anchor="seccio-agenda">
 			<div class="agenda">
-					<h2 class="agenda_titol">AGENDA</h2>
-   					<h3 id="prox"> Pròximament</h3>
-    				<table>	
+					<div class="agenda_titol"><h2 class="vermell">AGENDA</h2></div>
+   					<h3 class="prox"> Pròximament</h3>
+    				<div class="situador_taula">
+    					<table>	
    						<tr>
    							<td>07/04/19</td>
    							<td>Tiana</td>
@@ -181,30 +237,30 @@
    							<td>04/07/19</td>
    							<td>Bellvitge</td>
   		 				</tr>
-					</table>
-				</div>
+						</table>
+					</div>
 			</div>
 		</section>
-		<section id="seccio_contacte" data-anchor="seccio_contacte">	
+		<section class="page-section" id="seccio-contacte" data-anchor="seccio-contacte">	
 			<div class="contacte">
-				<div class="intro"></div>
+				<div class="marge_contacte"></div>
+				
 				<div class="fons_contacte">
+					
 					<div class="text_contacte">
 						<h5 class="contacte_titol">CONTACTE</h5>
 						<br>
 						<br>
-
 						<h6>Alvaro Guerrero</h6>
 						<br>
 						<h6>+34 637 408 041</h6>
-							<br>
-					<h6>alvaritoicia@gmail.com</h6>
+						<br>
+						<h6>alvaritoicia@gmail.com</h6>
 					</div>
 				</div>
 			</div>	
 		</section>
 	</div>
-	<!-- end of wrapper-->
 </body>
 
 <script>
@@ -230,7 +286,7 @@
     		if (windscroll >= 100) {
         		$('nav').addClass('fixed');
        			$('.wrapper section').each(function(i) {
-           			if ($(this).position().top <= windscroll +80) {
+           			if ($(this).position().top <= windscroll + 1) {
                 		$('nav a.active').removeClass('active');
                 		$('nav a').eq(i).addClass('active');
             		}
@@ -244,6 +300,60 @@
     		}
 
 		}).scroll();
+
+	/*------Script alternatiu per que la nav envii a cada secció fent scroll (tret de https://codepen.io/anon/pen/wRMbrO)---*/
+
+	/*$(document).ready(function() {
+		$('a[href*=#]').bind('click', function(e) {
+				e.preventDefault(); // prevent hard jump, the default behavior
+
+				var target = $(this).attr("href"); // Set the target as variable
+
+				// perform animated scrolling by getting top-position of target-element and set it as scroll target
+				$('html, body').stop().animate({
+						scrollTop: $(target).offset().top
+				}, 600, function() {
+						location.hash = target; //attach the hash (#jumptarget) to the pageurl
+				});
+
+				return false;
+		});
+});*/
+
+/*$(window).scroll(function() {
+		var scrollDistance = $(window).scrollTop();
+
+		// Show/hide menu on scroll
+		//if (scrollDistance >= 850) {
+		//		$('nav').fadeIn("fast");
+		//} else {
+		//		$('nav').fadeOut("fast");
+		//}
+	
+		// Assign active class to nav links while scolling
+		$('.page-section').each(function(i) {
+				if ($(this).position().top <= scrollDistance) {
+						$('.navigation a.active').removeClass('active');
+						$('.navigation a').eq(i).addClass('active');
+				}
+		});
+}).scroll();*/
+
+/*---Script només perquè en clicar faci scroll a la secció indicada---*/
+
+/*$("a[href^='#']").click(function(e) {
+	e.preventDefault();
+	
+	var position = $($(this).attr("href")).offset().top;
+
+	$("body, html").animate({
+		scrollTop: position
+	}, 500 );
+});*/
+
+</script>
+
+<script>
 
 	/*------Script per que la nav desaparegui en baixar i aparegui en scroll up (amb jquery)(a view-source:https://osvaldas.info/examples/auto-hide-sticky-header/?reactive-plus)---*/
 
@@ -292,15 +402,21 @@
 			{
 				if( wScrollCurrent + wHeight >= dHeight - elHeight )  // scrolled to the very bottom; element slides in
 					$element.css( 'top', ( elTop = wScrollCurrent + wHeight - dHeight ) < 0 ? elTop : 0 );
+    
 
 				else // scrolled down; element slides out
 					$element.css( 'top', Math.abs( elTop ) > elHeight ? -elHeight : elTop );
+
 			}
 
 			wScrollBefore = wScrollCurrent;
 		});
 
 	})( jQuery, window, document );
+
+</script>
+
+<script>
 
 	/*------Script per que les imatges es carreguin primer en baixa resolució (a https://stackoverflow.com/questions/27934548/load-a-low-res-background-image-first-then-a-high-res-one)---*/
 
@@ -313,7 +429,215 @@
       });
    }); 
 
+</script>
+
+<script>
+
+	/*-----Script que afegeix transicions només en hover (tret de: https://css-tricks.com/snippets/jquery/addingremoving-class-on-hover/)-----*/
+
+	$('a').hover(
+       function(){ $(this).addClass('transicio') },
+       function(){ $(this).removeClass('transicio') }
+	)
 
 </script>
+
+<script>
+
+	/*-----Script per fer una slideshow automàtica (tret de https://www.w3schools.com/w3css/w3css_slideshow.asp)-----*/
+
+	/*var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("diapositives");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+} */
+
+/*-----Script per fer una slideshow automàtica AMB TRANSICIONS (tret de https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/)-----*/
+
+$("#diapositives > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#diapositives > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#diapositives');
+},  4000);
+
+</script>
+
+<script>
+
+/*-----Fade in objectes quan estiguin sencers a la pantalla (tret de https://codepen.io/annalarson/pen/GesqK)---*/
+
+/*-----Fade in i pujar objectes quan arribin a la pantalla (tret de https://www.superhi.com/blog/how-to-add-web-design-elements-that-fade-in-and-out-on-scroll)---*/
+
+$(document).on("scroll", function () {
+  var pageTop = $(document).scrollTop()
+  var pageBottom = pageTop + $(window).height()
+  var tags = $(".hideme")
+
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i]
+
+    if ($(tag).position().top < pageBottom) {
+      $(tag).addClass("visible")
+    } else {
+      
+    }
+  }
+})
+
+</script>
+
+<script>
+
+/*----treure marc quan es comença a scroll (tret de https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)------*/
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 1) {
+        $(".marc").addClass("marc-invisible");
+    } else {
+        $(".marc").removeClass("marc-invisible");
+    }
+});
+
+
+
+</script>
+
+<script>
+
+/*--afegir marc en scroll fins al final de la pàgina (tret de https://gist.github.com/toshimaru/6102647)--*/
+
+/*$(window).on("scroll", function() {
+	var scrollHeight = $(document).height();
+	var scrollPosition = $(window).height() + $(window).scrollTop();
+	if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+	    $(".marge_contacte").removeClass("marge_contacte-invisible");
+	}
+
+	else{
+		$(".marge_contacte").addClass("marge_contacte-invisible");
+	}
+});*/
+
+$(document).on("scroll", function () {
+  var pageTop = $(document).scrollTop()
+  var pageBottom = pageTop + $(window).height()
+  var bottomContacte = $(".marge_contacte").position().top + $(".marge_contacte").outerHeight(true);
+
+    if ((bottomContacte - pageBottom) < 1 ) {
+      $(".marge_contacte").removeClass("marge_contacte-invisible");
+    } else {
+      $(".marge_contacte").addClass("marge_contacte-invisible");
+    }
+})
+
+</script>
+
+<script>
+
+/*--marges apareixent a les fotos en apareixer al viewport (tret de https://www.superhi.com/blog/how-to-add-web-design-elements-that-fade-in-and-out-on-scroll) i modificat ---*/
+
+/*$(document).on("scroll", function () {
+  var pageTop = $(document).scrollTop()
+  var pageBottom = pageTop + $(window).height()
+  var tags = $(".marcs")
+
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i]
+
+    if ($(tag).position().top < pageBottom) {
+      $(tag).addClass("visible")
+    } else {
+      $(tag).removeClass("visible")
+    }
+  }
+})*/
+
+</script>
+
+<script>
+
+/*--Script perquè el hover de companyia es desactivi quan hi hagi un touch a la pantalla (o sigui, quan sabem que és un touch device) (tret de https://stackoverflow.com/questions/12339923/ontouchstart-and-ontouchend-in-jquery)---*/
+
+$('body').on('touchstart', function(){
+    $('.companyia').addClass('companyia_touch');
+})
+
+$('body').on('touchstart', function(){
+    $('.fons').addClass('fons_touch');
+})
+
+$('body').on('touchstart', function(){
+    $('.alvarito_descripcio').addClass('alvarito_descripcio_touch');
+})
+
+$('body').on('touchstart', function(){
+    $('.marti_foto').addClass('marti_foto_touch');
+})
+
+$('body').on('touchstart', function(){
+    $('.marti_descripcio').addClass('marti_descripcio_touch');
+})
+
+</script>
+
+<script>
+	$(function(){
+  var draw = SVG('wrapperdos').size('100%', '100%');
+  var polyline = draw.polyline([[0,0] ]).fill('none').stroke({ color: '#F3602A', width: 36 })
+  polyline.plot([[0,0], [0,0], [0,0], [0,0], [0,0]])
+  polyline.animate(750).plot([[0,0], [$(window).width(),0], [$(window).width(),0], [$(window).width(),0], [$(window).width(),0]])
+    
+    .after(function() {
+  		polyline.plot([[0,0], [$(window).width(),0], [$(window).width(),0], [$(window).width(),0], [$(window).width(),0]])
+ 		polyline.animate(750).plot([[0,0], [$(window).width(),0], [$(window).width(),$(window).height()], [$(window).width(),$(window).height()], [$(window).width(),$(window).height()]]) 
+  
+    		.after(function() {
+  				polyline.plot([[0,0], [$(window).width(),0], [$(window).width(),$(window).height()], [$(window).width(),$(window).height()], [$(window).width(),$(window).height()]])
+  				polyline.animate(750).plot([[0,0], [$(window).width(),0], [$(window).width(),$(window).height()], [0,$(window).height()], [0,$(window).height()]]) 
+  				    
+					.after(function() {
+  						polyline.plot([[0,0], [$(window).width(),0], [$(window).width(),$(window).height()], [0,$(window).height()], [0,$(window).height()]])
+  						polyline.animate(750).plot([[0,0], [$(window).width(),0], [$(window).width(),$(window).height()], [0,$(window).height()], [0,0]]) 
+ 					})
+			})
+
+	})
+});
+</script>
+
+<script>
+
+/* tret de https://www.superhi.com/video/how-to-add-a-simple-loading-screen-to-your-site */
+
+$(document).ready(function(){
+    $('.carregant').removeClass('carregant_invisible');
+})
+
+</script>
+
+<script>
+
+	setTimeout(function () {
+		document.querySelector("#wrapperdos").classList.add("wrapperdos_invisible")
+	},3400)
+
+</script>
+
 
 </html>
