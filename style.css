@@ -251,7 +251,6 @@ a:hover, a.active{
 	grid-column:2/3;
 	grid-row:1/2;
 	align-self: end;
-
 }
 
 .nav{
@@ -418,16 +417,17 @@ iframe:hover{
 
 .fitxa_fons{
 	grid-row: 3/4;
-	width: 100%;
+	width: auto;
+	margin: auto;
 	height: 20vh;
-	display: grid;
 	z-index: 3;
+	display: table;
+    
 }
 
-#fitxa_boto{
-	display: inline-block;
-	width: 300px;
-	margin: auto;	
+.fitxa_centrat{
+	display: table-cell;
+	vertical-align: middle;
 }
 
 /*.textura_video{
@@ -437,16 +437,19 @@ iframe:hover{
 	mix-blend-mode: multiply;
 }*/
 
-
-
-#fitxa_text{
-	text-align: center;
-	color: black;
-	font: lighter 26px futuraf, Sans-Serif;
-	
+#esquerra{
+	margin-right: 80px;
 }
 
-#fitxa_text:hover{
+
+.fitxa_text{
+	align-self: center;
+	color: black;
+	font: lighter 26px futuraf, Sans-Serif;
+	display: inline;
+}
+
+.fitxa_text:hover{
 	margin-top: 6px;
 	padding-bottom: 5px;
 	border-bottom: 1px solid black;
@@ -1515,16 +1518,11 @@ h1{
 
 .fitxa_fons{
 	grid-row: 3/4;
-	width: 100%;
+	width: auto;
+	margin: auto;
 	height: 20vh;
-	display: grid;
 	z-index: 3;
-}
-
-#fitxa_boto{
-	display: inline-block;
-	width: 300px;
-	margin: auto;	
+	display: table;
 }
 
 /*.textura_video{
@@ -1534,16 +1532,23 @@ h1{
 	mix-blend-mode: multiply;
 }*/
 
+.fitxa_centrat{
+	display: table-cell;
+	vertical-align: middle;
+}
 
+#esquerra{
+	margin-right: 80px;
+}
 
-#fitxa_text{
+.fitxa_text{
 	text-align: center;
 	color: black;
-	font: lighter 26px futuraf, Sans-Serif;
+	font: lighter 22px futuraf, Sans-Serif;
 	
 }
 
-#fitxa_text:hover{
+.fitxa_text:hover{
 	margin-top: 6px;
 	padding-bottom: 5px;
 	border-bottom: 1px solid black;
@@ -2325,7 +2330,64 @@ h6{
 
 /*-------------------------------------------------------------------------------------------*/
 
+@media only screen and (max-width: 590px) {
+
+.fitxa_fons{
+	grid-row: 3/4;
+	width: auto;
+	margin: auto;
+	height: 20vh;
+	z-index: 3;
+	display: table;
+}
+
+/*.textura_video{
+	height: 100vh;
+	background: url(img/textura@3x.png);
+	background-size: contain;
+	mix-blend-mode: multiply;
+}*/
+
+.fitxa_centrat{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#esquerra{
+	margin-right: 0;
+	margin-bottom: 10px;
+}
+
+.fitxa_text{
+	margin-top: 6px;
+	padding-bottom: 6px;
+	display: block;
+	text-align: center;
+	color: black;
+	font: lighter 22px futuraf, Sans-Serif;
+	
+}
+
+.fitxa_text:hover{
+	padding-bottom: 5px;
+	border-bottom: 1px solid black;
+	
+}
+
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
 @media only screen and (max-width: 490px) {
+
+.logo{
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	grid-column: 1/4;
+	grid-row:1/2;
+	align-self: end;
+}
 
 .fons_musica{
 	background: url(img/pals_percussio.png), url(img/pals_percussio_sssd.jpg), url(img/pals_percussio_ssd.jpg), url(img/pals_percussio_sd.jpg);
