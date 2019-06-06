@@ -1133,6 +1133,21 @@ span{
 	text-align: center;
 }
 
+.ant{
+	color: gray;
+	width: auto;
+	font: italic lighter 50px futuraf, sans-serif;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.any{
+	color: gray;
+	width: auto;
+	font: italic lighter 50px futuraf, sans-serif;
+	text-align: center;
+}
+
 td{
 	color: white;
 	border-bottom: 1px solid #F3602A;
@@ -1140,23 +1155,40 @@ td{
 	padding: 0;
 	font: normal lighter 22px futuraf, sans-serif;
 	width: 25vw;
-
+	height: 90px;
 }
 
 table{
-	height: 25vh;
+	height: auto;
 	width: 80%;
 	margin: auto;
 	align-self: end;
 	border-collapse: collapse;
 	table-layout: fixed;
 	padding: 0;
+	/*margin: 20px auto;*/
+}
+
+.bot{
+	margin-bottom: 80px;
 }
 
 .situador_taula{
-	height: 40vh;
+	height: auto;
 	display: grid;
 }
+
+.gris{
+	color: white;
+	border-bottom: 1px solid gray;
+	text-align: center;
+	padding: 0;
+	font: normal lighter 22px futuraf, sans-serif;
+	width: 25vw;
+	height: 90px;
+}
+
+
 
 /*--- Secció Contacte---*/
 
@@ -2242,7 +2274,7 @@ td{
 }
 
 table{
-	height: 25vh;
+	height: auto;
 	width: 80vw;
 	margin: auto;
 	align-self: end;
@@ -2252,7 +2284,7 @@ table{
 }
 
 .situador_taula{
-	height: 40vh;
+	height: auto;
 	display: grid;
 }
 
